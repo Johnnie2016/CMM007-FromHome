@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link type="text/css" rel="stylesheet" href="resources/style.css"/>
+    <link rel="stylesheet" href="unsemantic-grid-responsive-tablet.css">
+    <meta
+            name="viewport"
+            content="
+width=device-width,
+initial-scale=1,
+minimum-scale=1,
+maximum-scale=1"
+            />
+</head>
+<body>
+
+<header class="grid-container">
+        <section class="25" id="Logo">
+            <img src="resources/logo.png" alt="Logo">
+
+        <section class="75" id="Top row text">
+        <h1>Bug Tracker</h1>
+            <p>Keeping track of all the pesky little bugs</p>
+</header>
+
+<main class="grid-container">
+    <nav id="Navigation">
+        <ul>
+            <li><a href="bugs.html">All Bug Items</a></li>
+            <li><a href="bugs.html">Android Bugs</a></li>
+            <li><a href="bugs.html">iOS bugs</a></li>
+            <li><a href="bugs.html">Windows bugs</a></li>
+            <li><a href="bugs.html">Insert bugs</a></li>
+        </ul>
+    </nav>
+
+    <div id="Textbox">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+
+</main>
+
+<footer>
+    <p>Designed by John Morrison, 2016</p>
+</footer>
+
+</body>
+</html>
