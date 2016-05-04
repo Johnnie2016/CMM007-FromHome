@@ -11,9 +11,10 @@
 }8
 
 9 /* IMAGE SIZING CSS */
-10 #Logo
-11 {width: 100px;
-    13 }
+10 #logo
+11 {
+    width: 100px;}
+    13
 12
 14
 
