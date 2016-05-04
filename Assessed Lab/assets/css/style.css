@@ -30,9 +30,9 @@ body {
 }
 
 #logo {
-    width: 100px;
-    height: 100px;
-    float: right;
+    width:100px;
+    height:100px;
+    float:right;
 }
 
 /* Gets rid of bullet points */
@@ -48,7 +48,7 @@ nav>ul>li {
     float: left;
 }
 
-#Textbox{ width:400px;
-    height:200px;
+#Textbox{ width:200px;
+    height:2100px;
 }
 
