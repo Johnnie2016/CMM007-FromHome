@@ -54,7 +54,7 @@ nav>ul {
 /* Floats each individual list item to the left */
 nav>ul>li {
     float: left;
-    margin: 10px;
+
 }
 
 #Textbox{ width:500px;
