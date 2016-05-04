@@ -1,0 +1,157 @@
+/* @import "templatecolours.css"; */
+2
+
+3 body {
+    4 max-width: 960px;
+    5 margin-left: auto;
+    6 margin-right: auto;
+    7 display: flex;
+    display: -webkit-flex /*Safari */
+    flex-direction : row;
+}8
+
+9 /* IMAGE SIZING CSS */
+10 #Logo
+11 {width: 100px;
+    13 }
+12
+14
+
+15
+20
+26
+
+27 /* NAVIGATION BAR CSS */
+28
+/* Gets rid of bullet points */
+nav>ul {
+       29     list-style-type: none;
+       30     margin: 0;
+       31     padding: 0;
+       32     overflow: hidden;
+       33 }
+34
+
+/* Floats each individual list item to the left */
+35 nav>ul>li {
+       36     float: left;
+       37 }
+38
+
+#Textbox{
+
+
+}
+
+#Logo{
+
+
+}
+
+
+50 /* TEXT STYLING */
+51
+/*
+52 h1, h3 {
+       53     font-family: 'Roboto', sans-serif;
+       54     font-weight: 300;
+       55 }
+56
+
+57 p, h2, a{
+       58     font-family: 'Roboto', sans-serif;
+       59     font-weight: 400;
+       60 }
+61
+
+62 h4, h5 {
+       63     font-family: 'Roboto', sans-serif;
+       64     font-weight: 700;
+       65 }
+66
+
+67 h1 {
+       68     font-size: 20px;
+       69 }
+70 h2 {
+       71     font-size: 18px;
+       72 }
+73 h3 {
+       74     font-size: 16px;
+       75 }
+76 h4 {
+       77     font-size: 14px;
+       78 }
+79 p {
+       80     font-size: 13px;
+       81 }
+82 a {
+       83     font-size: 13px;
+       84 }
+85
+*/
+86 /* COLOURINGS */
+
+/*
+87 #news{
+       88     background-color:#DBC9DF;
+       89 }
+90 #events{
+       91     background-color: #782A7E;
+       92 }
+93 footer{
+       94     background-color: #363636;
+       95 }
+96 footer>p{
+       97     width: 150px;
+       98     margin-left: auto;
+       99     margin-right: auto;
+       100     color: white;
+       101     height: 75px;
+       102 }
+103
+*/
+104
+
+/* MARGIN FIXES */
+
+
+105
+/* aside p,h3,h4{
+        106     margin: 0;
+        107     color: white;
+        108 } */
+    /*
+109 aside h3{
+        110     padding-top: 10px;
+        111     padding-left: 10px;
+        112     padding-right: 10px;
+        113 }
+114
+
+115 aside h4{
+        116     padding-top: 20px;
+        117     padding-left: 10px;
+        118     padding-right: 10px;
+        119 }
+120
+
+121 aside p{
+        122     padding-bottom: 20px;
+        123     padding-left: 10px;
+        124     padding-right: 10px;
+        125 }
+126
+
+127 aside {
+        128     padding-right: 0px !important;
+        129     margin-top: -5px !important;
+        130 }
+131
+
+132 main{
+        133     padding-right: 0px !important;
+        134 }
+
+
+    */
