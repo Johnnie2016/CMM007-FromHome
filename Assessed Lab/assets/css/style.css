@@ -30,8 +30,8 @@ body {
 }
 
 #logo {
-    width:100px;
-    height:100px;
+    width:200px;
+    height:200px;
     float:right;
 }
 
@@ -49,6 +49,6 @@ nav>ul>li {
 }
 
 #Textbox{ width:200px;
-    height:2100px;
+    height:200px;
 }
 
