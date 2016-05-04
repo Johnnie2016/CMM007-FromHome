@@ -23,6 +23,11 @@ body {
      display: -webkit-flex ;/*Safari */
      flex-direction : row; }
 
+.container {
+    height:200px;
+    width: 200px;
+
+}
 
 
 /* Gets rid of bullet points */
