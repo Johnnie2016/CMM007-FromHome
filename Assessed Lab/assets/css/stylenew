@@ -29,6 +29,10 @@ body {
 
 }
 
+#logo {
+    width: 100px;
+    height: 100px;
+}
 
 /* Gets rid of bullet points */
 nav>ul {
@@ -47,7 +51,3 @@ nav>ul {
         height:200px;
 }
 
-#logo {
-    width: 100px;
-    height: 100px;
-}
