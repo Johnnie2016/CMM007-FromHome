@@ -48,11 +48,15 @@ nav>ul {
 /* Floats each individual list item to the left */
 nav>ul>li {
     float: left;
+    margin: 10px;
 }
 
-#Textbox{ width:200px;
+#Textbox{ width:500px;
     height:200px;
     float:left;
     margin: 10px;
 }
 
+footer{
+
+}
