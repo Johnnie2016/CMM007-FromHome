@@ -23,8 +23,10 @@ body {
      display: -webkit-flex ;/*Safari */
      flex-direction : row; }
 
-
-#logo {width: 100px;}
+#logo {
+        width: 100px;
+        height: 100px;
+    }
 
 /* Gets rid of bullet points */
 nav>ul {
