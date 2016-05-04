@@ -26,6 +26,7 @@ body {
 .container {
     height:200px;
     width: 200px;
+    margin: 10px;
 
 }
 
@@ -38,7 +39,7 @@ body {
 /* Gets rid of bullet points */
 nav>ul {
     list-style-type: none;
-    margin: 0;
+    margin: 10;
     padding: 0;
     overflow: hidden;
 }
@@ -50,5 +51,6 @@ nav>ul>li {
 
 #Textbox{ width:200px;
     height:200px;
+    margin: 10px;
 }
 
