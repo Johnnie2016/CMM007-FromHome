@@ -17,8 +17,8 @@ maximum-scale=1"
 <body>
 
 <header class="grid-container">
-        <section class="25" id="Logo">
-            <img src="resources/logo.png" alt="Logo">
+        <section class="25" >
+            <img id="Logo" src="resources/logo.png" alt="Logo">
 
         <section class="75" id="Top row text">
         <h1>Bug Tracker</h1>
