@@ -1,0 +1,53 @@
+
+
+header {
+
+
+}
+
+
+main {
+
+
+
+
+
+
+}
+
+body {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    display: -webkit-flex ;/*Safari */
+    flex-direction : row; }
+
+.container {
+    height:100px;
+    width: 100px;
+
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+    float: right;
+}
+
+/* Gets rid of bullet points */
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Floats each individual list item to the left */
+nav>ul>li {
+    float: left;
+}
+
+#Textbox{ width:400px;
+    height:200px;
+}
