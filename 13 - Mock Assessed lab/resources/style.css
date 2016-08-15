@@ -1,0 +1,28 @@
+h1 {
+    color: blue;
+    font: arial
+}
+
+h2 {
+    color: blue;
+    arial: arial;
+}
+
+body{
+    background-color: white;
+    font: arial;
+}
+
+main{
+    max-width:960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    #Logo
+}
+
+
+nav{
+
+}
