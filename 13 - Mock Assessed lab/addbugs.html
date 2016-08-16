@@ -33,7 +33,34 @@
     </nav>
 
     <section class="grid-75">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <form class="form-input">
+            <fieldset>
+                <div class="field">
+                    <label for="title">Bug Name</label>
+                    <input type="text" name="title" id="title" accesskey="1" placeholder="Entry Title" autofocus required>
+                </div>
+                <div class="field">
+                    <label for="summary">Bug Summary:</label>
+                    <textarea name="summary" id="summary" rows="5" cols="28" accesskey="2" placeholder="Entry Summary" required></textarea>
+                </div>
+                <div class="field">
+                    <label for="category">Bug Category:</label>
+                    <select name="category" id="category" accesskey="3"  required>
+                        <option value="" disabled selected>Select category..</option>
+                        <option value="android">Android</option>
+                        <option value="iOS">iOS</option>
+                        <option value="windows">Windows</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="submitted">Submitted By:</label>
+                    <input type="text" name="submitted" id="submitted" accesskey="4" placeholder="Submitted By (Optional)">
+                </div>
+                <div id="right">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
     </section>
 
 </main>
