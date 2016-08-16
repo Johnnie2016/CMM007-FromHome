@@ -41,7 +41,10 @@ ul {
 }
 
 li {
-    text-decoration: none;
+
 
 }
 
+li a{
+    text-decoration: none;
+}
