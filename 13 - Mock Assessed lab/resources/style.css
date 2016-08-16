@@ -36,13 +36,12 @@ nav{
 
 ul {
     list-style-type: none;
-    text-decoration: none;
     padding-left: 25px;
     padding-top: 6px;
 }
 
 li {
-
+    text-decoration: none;
 
 }
 
