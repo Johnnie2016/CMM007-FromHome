@@ -2,11 +2,11 @@
 <html>
 <head>
 </head>
-<body>
-<p>
-    <?php
-    echo "Hello World";
-    ?>
-</p>
-</body>
+    <body>
+        <p>
+            <?php
+            echo "Hello World"; // Remember the semi colon !
+            ?>
+        </p>
+    </body>
 </html>
