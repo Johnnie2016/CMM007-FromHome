@@ -82,8 +82,8 @@
                      }
 
                      $sql = "INSERT INTO bugView VALUES (NULL,'$name','$summary','$category','$submitter')";
-                     mysqli_query($conn,$sql);
-                     mysqli_close($conn);
+                     mysqli_query($db,$sql);
+                     mysqli_close($db);
                      header('Location: addbugs.php?category=all');
                  }
                  else {

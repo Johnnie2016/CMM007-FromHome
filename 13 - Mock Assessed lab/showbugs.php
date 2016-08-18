@@ -1,3 +1,22 @@
+
+
+// is this bit below required
+<?php
+
+ include_once('dbaseconn.php');
+
+ if ($db -> connect_errno)
+     {
+         die ('Connect failed: ' . $db->connect_errno);
+ }
+
+ ?>
+//
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +54,7 @@
     <section class="grid-75">
         <div id="bugshow">
             <?php
-                             include ("db_connection.php");
+                             include ("dbaseconn.php");
              if($_GET['bugcategory']=="android"){
                                  $getbugs = "SELECT * FROM Bugs where bugcategory like '%android%'";
                  $result = mysqli_query($db, $getbugs);
