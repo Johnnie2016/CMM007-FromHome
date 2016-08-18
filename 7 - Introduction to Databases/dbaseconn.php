@@ -6,3 +6,12 @@
 
     $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 ?>
+
+
+// test if connection was established and print any errors
+
+
+// Use if needed
+// if (!db) {
+        die('Connect error: ' . mysqli_connect_errno());
+}
