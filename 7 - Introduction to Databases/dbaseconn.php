@@ -12,10 +12,13 @@
 
 
 // Use if needed
-// if (!db) {
+// test if connection was established, and print any errors
+// if (!$db)
+{
         die('Connect error: ' . mysqli_connect_errno());
 }
 
-//if(!$db){
-10         echo "Can't connect to Database" . mysqli_error();
-11     }
+//if(!$db)
+{
+         echo "Can't connect to Database" . mysqli_error();
+}
