@@ -9,7 +9,7 @@
 <h1>Marvel Films</h1>
 <?php
 include("connection.php");
-$db = marvelmovies;
+
 $sql = "SELECT * FROM marvelmovies";
 $result = mysqli_query($db, $sql);
 

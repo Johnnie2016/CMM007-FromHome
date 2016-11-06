@@ -10,7 +10,7 @@
 
 <?php
 include("connection.php");
-// $db = marvelmovies;
+
 $sql = "SELECT * FROM marvelmovies";
 $result = mysqli_query($db, $sql);
 
