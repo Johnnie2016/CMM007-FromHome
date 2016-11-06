@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Welcome</title>
+    <title>Lists all films in the Marvel database</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
