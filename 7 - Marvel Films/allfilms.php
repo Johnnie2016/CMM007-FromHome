@@ -10,9 +10,17 @@
 
 <?php
 include("connection.php");
-$db = marvelmovies;
+// $db = marvelmovies;
 $sql = "SELECT * FROM marvelmovies";
 $result = mysqli_query($db, $sql);
+
+// test if connection was established, and print any errors
+if (!$db)
+{
+    die('Connect Error: ' . mysqli_connect_errno());
+}
+
+
 
 while($row = $result->fetch_array())
 {
