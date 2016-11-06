@@ -14,7 +14,8 @@ $db = marvelmovies;
 $sql = "SELECT * FROM marvelmovies";
 $result = mysqli_query($db, $sql);
 
-while($row = $result -> fetch_array()) {
+while($row = $result->fetch_array())
+{
     $movieTitle = $row['title'];
     echo "<p>" . $movieTitle . "</p>";
     $year = $row['yearReleased'];
