@@ -11,7 +11,7 @@
 <?php
 include("connection.php");
 
-$sql = "SELECT * FROM marvelmovies where productionStudio = '20th Century Fox' and title like 'X*'";
+$sql = "SELECT * FROM marvelmovies where productionStudio = '20th Century Fox' and title like 'X%'";
 $result = mysqli_query($db, $sql);
 
 while($row = $result -> fetch_array())
