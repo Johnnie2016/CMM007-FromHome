@@ -20,8 +20,6 @@ if (!$db)
     die('Connect Error: ' . mysqli_connect_errno());
 }
 
-
-
 while($row = $result->fetch_array())
 {
     $movieTitle = $row['title'];
