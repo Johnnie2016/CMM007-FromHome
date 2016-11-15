@@ -18,8 +18,8 @@
         $sql_query = "SELECT * FROM superheroes";
         $result = $db->query($sql_query);
         while($row = $result->fetch_array()) {
-            $firstname = $row['firstName'];
-            $lastname = $row['lastName'];
+            $firstname = $row['firstname'];
+            $lastname = $row['lastname'];
             $superheroID = $row['superheroID'];
             echo "<option value='{$superheroID}'>{$firstname} {$lastname}</option>";
         }
