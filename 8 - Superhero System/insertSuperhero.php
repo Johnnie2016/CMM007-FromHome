@@ -4,9 +4,10 @@ include("connection.php");
 
 $firstname = $_POST["firstname"];
 $lastname = $_POST["lastname"];
-$superpower = $_POST["superpower"];
+$superheroname = $_POST["superheroName"];
+$mainsuperpower = $_POST["mainSuperpower"];
 
-$sql = "INSERT INTO superheroes (firstName, lastName, mainSuperpower) VALUES ('$firstname', '$lastname', '$superpower')";
+$sql = "INSERT INTO superheroes (firstname, lastname, superheroName, mainSuperpower) VALUES ('$firstname', '$lastname', '$superheroname', '$mainsuperpower')";
 
 if (mysqli_query($db, $sql)) {
 } else {
