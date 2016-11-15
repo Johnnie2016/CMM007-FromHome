@@ -13,7 +13,7 @@
 <ul>
     <li><a href="superheroform.html">Insert a superhero</a></li>
     <li><a href="displaySuperheroes.php">Display all superheroes</a></li>
-    <li><a href="battle.php">Insert a battle</a></li>
+    <li><a href="insertBattle.php">Insert a battle</a></li>
     <li><a href="displayBattles.php">Display all battles</a></li>
     <ul>
         <?
@@ -22,8 +22,8 @@
         $result = $db->query($sql_query);
         while($row = $result->fetch_array())
         {
-            $firstname = $row['firstName'];
-            $lastname = $row['lastName'];
+            $firstname = $row['firstname'];
+            $lastname = $row['lastname'];
             $id = $row['superheroID'];
             echo "<li> <a href='displayBattles.php?id={$id}'>Battles for {$firstname} {$lastname}</a></li>";
         }
