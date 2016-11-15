@@ -13,7 +13,7 @@
 <ul>
     <li><a href="superheroform.html">Insert a superhero</a></li>
     <li><a href="displaySuperheroes.php">Display all superheroes</a></li>
-    <li><a href="insertBattle.php">Insert a battle</a></li>
+    <li><a href="battle.php">Insert a battle</a></li>
     <li><a href="displayBattles.php">Display all battles</a></li>
     <ul>
         <?
