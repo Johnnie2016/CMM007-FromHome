@@ -14,8 +14,8 @@
     <?
     include ("connection.php");
 
-    if(isset($_GET['id'])) {
-        $superheroID = $_GET['id'];
+    if(isset($_GET['superheroID'])) {
+        $superheroID = $_GET['superheroID'];
         $sql_query = "SELECT * FROM superherobattles where superheroID = '$superheroID'";
     }
 else {
