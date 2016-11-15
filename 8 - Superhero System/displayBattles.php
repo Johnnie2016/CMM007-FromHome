@@ -32,7 +32,7 @@ else {
         $mainsuperpower = $row['mainSuperpower'];
         $villainfought = $row['villainFought'];
         echo "<article>
-            <p> The superhero known as <strong>{$firstname} {$lastname}</strong> recently fought <strong>{$villainfought}</strong> using <strong>{$mainsuperpower}</strong> </p>";
+            <p> The superhero known as <strong>{$superheroname}</strong> recently fought <strong>{$villainfought}</strong> using <strong>{$mainsuperpower}</strong> </p>";
     }
     ?>
 </main>

@@ -20,8 +20,9 @@
         while($row = $result->fetch_array()) {
             $firstname = $row['firstname'];
             $lastname = $row['lastname'];
-            $superheroID = $row['superheroID'];
-            echo "<option value='{$superheroID}'>{$firstname} {$lastname}</option>";
+            $superheroname = $row['superheroName'];
+            $id = $row['superheroID'];
+            echo "<option value='{$id}'>{$superheroname}</option>";
         }
         ?>
         </select><br>
