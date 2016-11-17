@@ -56,7 +56,7 @@ if (!$result) {
 die("Invalid query: " . mysql_error());
 }
 
-//header("Content-type: application/vnd.google-earth.kml+xml");  
+header("Content-type: application/vnd.google-earth.kml+xml");  
 // Iterate through the rows, adding XML nodes for each
 while ($row = @mysql_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
