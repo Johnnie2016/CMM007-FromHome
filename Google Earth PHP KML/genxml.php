@@ -47,9 +47,9 @@ die ("Can\'t use db : " . mysql_error());
 
 // Search the rows in the markers table
 $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("   
-."radians(".$center_lat.") ) * cos( radians( lat ) ) * cos( radians( lng )"
+."radians(".$center_lat.") ) * cos( radians( LatDD ) ) * cos( radians( LonDD )"
 ."- radians(" . $center_lng . ") ) + sin( radians(".$center_lat.") ) *"
-."sin( radians( lat ) ) ) ) AS distance FROM coredukwells HAVING distance < "
+."sin( radians( LatDD ) ) ) ) AS distance FROM coredukwells HAVING distance < "
 .$radius. " ORDER BY distance LIMIT 0 , 20";
 $result = mysql_query($query);
 if (!$result) {
