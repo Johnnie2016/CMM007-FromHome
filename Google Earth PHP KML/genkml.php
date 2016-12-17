@@ -1,5 +1,3 @@
-//  Using PHP5's DOM functions to output KML
-
 
 <?php
 require('connection.php');  // HERE
