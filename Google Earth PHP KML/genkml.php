@@ -2,6 +2,29 @@
 <?php
 require('connection.php');  // HERE
 
+error_reporting(0);
+
+function parseLocation(){
+$radius = $_GET['radius'];
+if (!$radius) $radius = 200;
+$bbox = $_GET['BBOX'];
+$bbox = split(",",$bbox);
+$west = $bbox[0];
+$south = $bbox[1];
+$east = $bbox[2];
+$north = $bbox[3];
+$center_lat = (($north - $south)/2) + $south;
+$center_lng = (($east - $west)/2) + $east;
+$location = array("center_lat"=>$center_lat,
+"center_lng"=>$center_lng,"radius"=>$radius);
+return $location;
+}
+$location = parseLocation();
+$center_lat = $location['center_lat'];
+$center_lng = $location['center_lng'];
+$radius = $location['radius'];
+
+
 // Opens a connection to a MySQL server.
 
 $connection = mysql_connect ($server, $username, $password);  // HERE
