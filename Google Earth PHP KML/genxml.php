@@ -31,13 +31,13 @@ $opennode = $dom->createElement("open","1");
 $parnode->appendChild($opennode);
 
 // Opens a connection to a mySQL server
-$connection=mysql_connect($server, $username, $password);   
-if (!$connection) {
+$db=mysql_connect($server, $username, $password);
+if (!$db) {
 die("Not connected : " . mysql_error());
 }
 
 // Set the active mySQL database                            
-$db_selected = mysql_select_db($database, $connection);
+$db_selected = mysql_select_db($database, $db);
 if (!$db_selected) {
 die ("Can\'t use db : " . mysql_error());
 }
