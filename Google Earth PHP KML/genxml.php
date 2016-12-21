@@ -1,5 +1,5 @@
 <?php
-require('connection.php');
+include('connection.php');
 error_reporting(0);
 function parseLocation(){
 $radius = $_GET['radius'];
