@@ -38,7 +38,7 @@ if (!$connection) {
 die("Not connected : " . mysqli_connect_errno());
 }
 if ($connection) {
-    die ('Connection successful: Server connection working' . mysqli_get_connection_stats());
+    die ('Connection success: Server connection working' . mysqli_get_connection_stats());
 }
 
 
