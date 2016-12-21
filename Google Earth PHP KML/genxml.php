@@ -37,7 +37,7 @@ die("Not connected : " . mysqli_error());
 }
 
 // Set the active mySQL database                            
-$db_selected = mysqli_select_db($database, $connection);
+$db_selected = mysqli_select_db($connection, $database);
 if (!$db_selected) {
 die ("Can\'t use db : " . mysqli_error());
 }
