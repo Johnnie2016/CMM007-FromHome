@@ -1,6 +1,4 @@
 <?php
-require("connection.php");
-
 error_reporting(0);
 function parseLocation(){
 $radius = $_GET['radius'];
@@ -32,14 +30,16 @@ $opennode = $dom->createElement("open","1");
 $parnode->appendChild($opennode);
 
 
+require("connection.php");
+
 // Opens a connection to a mySQL server
-// $connection=mysqli_connect($db);
-// if (!$connection) {
-// die("Not connected : " . mysqli_connect_errno());
-// }
-// if ($connection) {
-//    die ('Connection success: Server connection working' . mysqli_get_connection_stats());
-// }
+ $connection=mysqli_connect($db);
+ if (!$connection) {
+ die("Not connected : " . mysqli_connect_errno());
+ }
+ if ($connection) {
+    die ('Connection success: Server connection working' . mysqli_list_tables());
+}
 
 
 // Set the active mySQL database
