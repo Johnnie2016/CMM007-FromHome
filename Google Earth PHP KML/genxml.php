@@ -39,7 +39,7 @@ die("Not connected : " . mysqli_connect_errno());
 }
 
 // Set the active mySQL database
-$db_selected = mysqli_select_db($connection, "jm0207753");
+$db_selected = mysqli_select_db($db, "jm0207753");
 if (!$db_selected) {
 die ("Can\'t use db : " . mysqli_connect_errno());
 }
