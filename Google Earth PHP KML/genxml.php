@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+
 error_reporting(0);
 function parseLocation(){
 $radius = $_GET['radius'];
@@ -30,16 +30,18 @@ $parnode = $kmlnode->appendChild($foldernode);
 $opennode = $dom->createElement("open","1");
 $parnode->appendChild($opennode);
 
+include("connection.php");
+
 // Opens a connection to a mySQL server
 $connection=mysqli_connect($db);
 if (!$connection) {
-die("Not connected : " . mysqli_error());
+die("Not connected : " . mysqli_connect_errno());
 }
 
 // Set the active mySQL database                            
-$db_selected = mysqli_select_db($connection);
+$db_selected = mysqli_select_db($db_database, $connection);
 if (!$db_selected) {
-die ("Can\'t use db : " . mysqli_error());
+die ("Can\'t use db : " . mysqli_errno());
 }
 
 // Search the rows in the markers table
