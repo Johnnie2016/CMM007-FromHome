@@ -41,7 +41,7 @@ die("Not connected : " . mysqli_connect_errno());
 // Set the active mySQL database
 $db_selected = mysqli_select_db($db);
 if (!$db_selected) {
-die ("Can\'t use db : " . mysqli_errno());
+die ("Can\'t use db : " . mysqli_connect_errno());
 }
 
 // Search the rows in the markers table
@@ -52,7 +52,7 @@ $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("
 .$radius. " ORDER BY distance LIMIT 0 , 20";
 $result = mysqli_query($connection, $query);
 if (!$result) {
-die("Invalid query: " . mysqli_error());
+die("Invalid query: " . mysqli_connect_error());
 }
 
 //header("Content-type: application/vnd.google-earth.kml+xml");  
