@@ -37,6 +37,10 @@ $connection=mysqli_connect($db);
 if (!$connection) {
 die("Not connected : " . mysqli_connect_errno());
 }
+if ($connection) {
+    die ('Connection successful: Server connection working' . mysqli_get_connection_stats());
+}
+
 
 // Set the active mySQL database
 $db_selected = mysqli_select_db($db, "jm0207753");
