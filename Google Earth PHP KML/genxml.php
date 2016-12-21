@@ -31,15 +31,15 @@ $opennode = $dom->createElement("open","1");
 $parnode->appendChild($opennode);
 
 // Opens a connection to a mySQL server
-$db=mysql_connect($server, $username, $password);
+$db=mysqli_connect($server, $username, $password);
 if (!$db) {
-die("Not connected : " . mysql_error());
+die("Not connected : " . mysqli_error());
 }
 
 // Set the active mySQL database                            
-$db_selected = mysql_select_db($database, $db);
+$db_selected = mysqli_select_db($database, $db);
 if (!$db_selected) {
-die ("Can\'t use db : " . mysql_error());
+die ("Can\'t use db : " . mysqli_error());
 }
 
 // Search the rows in the markers table
@@ -48,14 +48,14 @@ $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("
 ."- radians(" . $center_lng . ") ) + sin( radians(".$center_lat.") ) *"
 ."sin( radians( LatDD ) ) ) ) AS distance FROM coredukwells HAVING distance < "
 .$radius. " ORDER BY distance LIMIT 0 , 20";
-$result = mysql_query($query);
+$result = mysqli_query($query);
 if (!$result) {
-die("Invalid query: " . mysql_error());
+die("Invalid query: " . mysqli_error());
 }
 
 //header("Content-type: application/vnd.google-earth.kml+xml");  
 // Iterate through the rows, adding XML nodes for each
-while ($row = @mysql_fetch_assoc($result)){
+while ($row = @mysqli_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
 $placenode = $parnode->appendChild($node);
 $namenode = $dom->createElement("WellID",htmlentities ($row['WellID']));
