@@ -1,4 +1,5 @@
 <?php
+include("connection.php");
 
 error_reporting(0);
 function parseLocation(){
@@ -30,7 +31,6 @@ $parnode = $kmlnode->appendChild($foldernode);
 $opennode = $dom->createElement("open","1");
 $parnode->appendChild($opennode);
 
-include("connection.php");
 
 // Opens a connection to a mySQL server
 $connection=mysqli_connect($db);
