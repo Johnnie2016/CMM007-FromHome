@@ -39,7 +39,7 @@ die("Not connected : " . mysqli_connect_errno());
 }
 
 // Set the active mySQL database                            
-// $db_selected = mysqli_select_db($db_database, $connection);
+// $db_selected = mysqli_select_db($connection, $db_database);
 // if (!$db_selected) {
 // die ("Can\'t use db : " . mysqli_errno());
 // }
@@ -50,7 +50,7 @@ $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("
 ."- radians(" . $center_lng . ") ) + sin( radians(".$center_lat.") ) *"
 ."sin( radians( LatDD ) ) ) ) AS distance FROM coredukwells HAVING distance < "
 .$radius. " ORDER BY distance LIMIT 0 , 20";
-$result = mysqli_query($db, $query);
+$result = mysqli_query($connection, $query);
 if (!$result) {
 die("Invalid query: " . mysqli_error());
 }
