@@ -33,13 +33,13 @@ $parnode->appendChild($opennode);
 
 
 // Opens a connection to a mySQL server
-$connection=mysqli_connect($db);
-if (!$connection) {
-die("Not connected : " . mysqli_connect_errno());
-}
-if ($connection) {
-    die ('Connection success: Server connection working' . mysqli_get_connection_stats());
-}
+// $connection=mysqli_connect($db);
+// if (!$connection) {
+// die("Not connected : " . mysqli_connect_errno());
+// }
+// if ($connection) {
+//    die ('Connection success: Server connection working' . mysqli_get_connection_stats());
+// }
 
 
 // Set the active mySQL database
