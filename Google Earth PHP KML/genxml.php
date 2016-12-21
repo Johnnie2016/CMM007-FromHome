@@ -1,5 +1,5 @@
 <?php
-include("connection.php");
+require("connection.php");
 
 error_reporting(0);
 function parseLocation(){
@@ -38,11 +38,11 @@ if (!$connection) {
 die("Not connected : " . mysqli_connect_errno());
 }
 
-// Set the active mySQL database                            
-// $db_selected = mysqli_select_db($connection, $db_database);
-// if (!$db_selected) {
-// die ("Can\'t use db : " . mysqli_errno());
-// }
+// Set the active mySQL database
+$db_selected = mysqli_select_db($connection, $db_database);
+if (!$db_selected) {
+die ("Can\'t use db : " . mysqli_errno());
+}
 
 // Search the rows in the markers table
 $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("   
