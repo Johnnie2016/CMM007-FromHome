@@ -1,8 +1,5 @@
 <?php
- $username = 'b3ac9c625849d8';   
- $password = 'f04f3dfe';
- $database = 'jm0207753';
- $server = 'br-cdbr-azure-south-a.cloudapp.net';
+require('DBconSimple.php');
 error_reporting(0);
 function parseLocation(){
 $radius = $_GET['radius'];
@@ -45,7 +42,7 @@ if (!$db_selected) {
 die ("Can\'t use db : " . mysql_error());
 }
 
-// Search the rows in the markers table
+// Search the rows in the coredukwells table
 $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("   
 ."radians(".$center_lat.") ) * cos( radians( LatDD ) ) * cos( radians( LonDD )"
 ."- radians(" . $center_lng . ") ) + sin( radians(".$center_lat.") ) *"
