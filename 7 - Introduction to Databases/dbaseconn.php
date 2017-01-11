@@ -5,20 +5,13 @@
     define('DB_DATABASE', 'jm0207753');
 
     $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
-?>
 
-
-// test if connection was established and print any errors
-
-
-// Use if needed
-// test if connection was established, and print any errors
-// if (!$db)
+if (!$db)
 {
         die('Connect error: ' . mysqli_connect_errno());
 }
-
-//if(!$db)
+if(!$db)
 {
          echo "Can't connect to Database" . mysqli_error();
 }
+?>
