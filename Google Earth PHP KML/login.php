@@ -16,7 +16,7 @@
 
 // IMPORTANT - Create an SQL query that selects the uid of the user which
 // matches that of the username and password entered
-    $sql="SELECT uid FROM users WHERE username='$username' and
+    $sql="SELECT uid FROM wellcoreusers WHERE username='$username' and
     password='$password'";
 
 //Set up a variable called result to hold the result of the SQL query
