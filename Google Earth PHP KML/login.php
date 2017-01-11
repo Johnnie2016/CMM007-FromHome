@@ -32,7 +32,7 @@
         header("location: home.php"); // Redirecting To another Page
     }else
     {
-        echo "Incorrect username or password. Now, don't do it again";
+        echo "Incorrect username or password. Now don't do it again";
     }
 }
 ?>
