@@ -1,6 +1,6 @@
 <?php
 // Establishing a connection with our database
-    include("DBconComplex.php");
+    include("dbconcomplex.php");
 
 //Checks it the username and password have values or have been left empty
 // if empty a message "Both fields are required appears" for the user
