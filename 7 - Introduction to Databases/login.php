@@ -1,6 +1,6 @@
 <?php
 // Establishing a connection with our database
-    include("connection.php");
+    include("dbaseconn.php");
 
 //Checks it the username and password have values or have been left empty
 // if empty a message "Both fields are required appears" for the user
