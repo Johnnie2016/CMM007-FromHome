@@ -11,8 +11,4 @@ if (!$db)
  {
     die('Connect Error: ' . mysqli_connect_errno());
  }
-if ($db)
- {
-    die ('Connection successful: ' . mysqli_error());
- }
 ?>
