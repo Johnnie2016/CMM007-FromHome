@@ -2,7 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
     <NetworkLinkControl>
         <message>
-
             This image is updated every 6 hours!
         </message>
         <linkName>Network Link Control Example</linkName>
