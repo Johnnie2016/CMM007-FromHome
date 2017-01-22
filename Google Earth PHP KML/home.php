@@ -23,7 +23,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
         <select name="wellregistration">
             <?
             include ("dbconcomplex.php");
-            $sql_query = "SELECT * FROM coredUKHCorNotes";
+            $sql_query = "SELECT OrigID, RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredUKHCorNotes";
             $result = $db->query($sql_query);
             while($row = $result->fetch_array()) {
                 $OrigID = $row['OrigID'];
