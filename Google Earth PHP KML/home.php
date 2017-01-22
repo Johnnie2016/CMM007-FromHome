@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
+<header>
 <h1>Hello, logged in OK then ?</h1><p>
 
 <h3>How would you like to search ?</h3><p>
@@ -15,7 +16,26 @@ N.B. - In order to use this you will need to have Google Earth installed.
 <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Open Google Earth...</a></p>
 
 <h3>Or would you like to search manually below ?</h3><p>
-
+</header>
+<main>
+    <form action="displayWellreg.php" method="post">
+        <p>Select the Well registration of the data you are interested in</p>
+        <select name="wellregistration">
+            <?
+            include ("dbconcomplex.php");
+            $sql_query = "SELECT * FROM coredUKHCorNotes";
+            $result = $db->query($sql_query);
+            while($row = $result->fetch_array()) {
+                $OrigID = $row['OrigID'];
+                $WellID = $row['WellID'];
+                $WellRegistration = $row['WellRegistration'];
+                $id = $row['RowID'];
+                echo "<option value='{$id}'>{$WellRegistration}</option>";
+            }
+            ?>
+        </select><br>
+     </form>
+</main>
 
 </body>
 </html>
