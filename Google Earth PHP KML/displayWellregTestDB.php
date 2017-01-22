@@ -25,7 +25,7 @@
         $result = $db->query($sql_query);
       while($row = $result->fetch_array())
       {
-       $OrigID = $row['OrigID'];
+       $ID = $row['ID'];
        $WellID = $row['WellID'];
        $WellRegistration = $row['WellRegistration'];
        $PercSand = $row['PercSand'];
