@@ -34,6 +34,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
             }
             ?>
         </select><br>
+        <input type="submit" text="Display Well details">
      </form>
 </main>
 
