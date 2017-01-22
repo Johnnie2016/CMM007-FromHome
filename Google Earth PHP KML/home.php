@@ -22,8 +22,6 @@ N.B. - In order to use this you will need to have Google Earth installed.
     <!--Paste SEARCH BOX 1 BACK IN HERE. -----  SEARCH BOX 1 BACK IN HERE.-->
 
 
-
-
     <p>
 
         <form action="displayWellregTestDB.php" method="post">
