@@ -23,7 +23,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
         <select name="wellregistration">
             <?php
             include ("dbconcomplex.php");
-            $sql_query = "SELECT OrigID, RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredUKHCorNotes";
+            $sql_query = "SELECT RowID, OrigID, WellID, WellRegistration, PercSand, Hydrocarbon, Cored FROM coredUKHCorNotes";
             $result = $db->query($sql_query);
             while($row = $result->fetch_array()) {
                 $OrigID = $row['OrigID'];
@@ -42,13 +42,12 @@ N.B. - In order to use this you will need to have Google Earth installed.
             <select name="wellregistration">
                 <?php
                 include ("dbconcomplex.php");
-                $sql_query = "SELECT OrigID, RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
+                $sql_query = "SELECT ID, WellID, WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
                 $result = $db->query($sql_query);
                 while($row = $result->fetch_array()) {
-                    $OrigID = $row['OrigID'];
                     $WellID = $row['WellID'];
                     $WellRegistration = $row['WellRegistration'];
-                    $id = $row['RowID'];
+                    $id = $row['ID'];
                     echo "<option value='{$id}'>{$WellRegistration}</option>";
                 }
                 ?>
