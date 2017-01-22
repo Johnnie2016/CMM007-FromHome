@@ -20,7 +20,7 @@
          $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredUKHCorNotes where WellRegistration = '$WellRegistration'";
         }
         else {
-            $sql_query = "SELECT * FROM coredUKHCorNotes";
+            $sql_query = "SELECT WellRegistration, WellID FROM coredUKHCorNotes";
         }
 
         $result = $db->query($sql_query);
