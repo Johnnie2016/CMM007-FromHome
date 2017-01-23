@@ -15,7 +15,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
 
 <!-- Link to Google Earth download here -->
 
-<p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Open Google Earth...</a></p>
+<p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Fly to Google Earth...</a></p>
 
 <h2>Or would you like to search manually below to view a listed version of the data?</h2><p>
 </header>
