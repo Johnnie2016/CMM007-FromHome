@@ -16,10 +16,10 @@
          if(isset($_GET['wellregistration'])) {
           $WellRegistration = $_GET['wellregistration'];
 
-         $sql_query = "SELECT ID, WellID, DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '$WellRegistration'";
+         $sql_query = "SELECT ID, WellID, WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '$WellRegistration'";
         }
         else {
-        $sql_query = "SELECT WellID, DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
+        $sql_query = "SELECT WellID, WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
 
         $result = $db->query($sql_query);
@@ -39,3 +39,11 @@
 </main>
 </body>
 </html>
+
+<!--
+$test = array('1' => 'One', 'Two', 'Three', 'One');
+$test = array_unique($test);
+foreach($test as $k => $v){
+echo $v;
+}
+-->
