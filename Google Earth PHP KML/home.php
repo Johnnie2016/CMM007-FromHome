@@ -6,8 +6,7 @@
 </head>
 <body>
 <header>
-<h2>Hello, now you have logged in, </h2><br>
-
+<h2>Hello, now you have logged in, </h2>
 <h2>how would you like to search ?</h2><p>
 
 Click here to open Google Earth and go straight to the North Sea UKCS.<p>
@@ -16,7 +15,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
 <!-- Link to Google Earth download here -->
 
 <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Fly to Google Earth...</a></p>
-
+<p>
 <h2>Or would you like to search manually below to view a listed version of the data?</h2><p>
 </header>
 <main>
