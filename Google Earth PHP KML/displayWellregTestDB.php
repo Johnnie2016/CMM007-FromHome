@@ -16,10 +16,10 @@
          if(isset($_GET['wellregistration'])) {
           $WellRegistration = $_GET['wellregistration'];
 
-         $sql_query = "SELECT ID, WellID, distinct WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '$WellRegistration'";
+         $sql_query = "SELECT ID, WellID, DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '$WellRegistration'";
         }
         else {
-        $sql_query = "SELECT WellID, distinct WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
+        $sql_query = "SELECT WellID, DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
 
         $result = $db->query($sql_query);
