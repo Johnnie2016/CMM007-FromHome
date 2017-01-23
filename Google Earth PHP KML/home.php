@@ -48,7 +48,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
 
         <form action="displayWellregTestDB.php" method="post">
             <p>Select the Well registration of the well data you are interested in</p>
-            <select name="wellregistration">
+            <select name="wellregistrationtestdb">
                 <?php
                 include ("dbconcomplex.php");
                 $sql_query = "select distinct WellRegistration from coredukwells";
