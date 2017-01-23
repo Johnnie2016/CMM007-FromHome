@@ -54,8 +54,9 @@ N.B. - In order to use this you will need to have Google Earth installed.
                 $sql_query = "select distinct WellRegistration from coredukwells";
                 $result = $db->query($sql_query);
                 while($row = $result->fetch_array()) {
-                    $id = $row['WellRegistration'];
-                    echo "<option value='{$id}'>{$WellRegistration}</option>";
+                    $WellRegtest = $row['WellRegistration'];
+                    $idtest = $row['WellRegistration'];
+                    echo "<option value='{$idtest}'>{$WellRegtest}</option>";
                 }
                 ?>
             </select><br><p>
