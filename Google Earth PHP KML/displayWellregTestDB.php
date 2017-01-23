@@ -7,18 +7,18 @@
 <body>
 <header>
     <h1>Data4WellCore</h1>
-    <h2>Display Wells select via Well registration number</h2>
+    <h2>Display Wells selected via Well registration number</h2>
     <p><a href="home.php">Return to home...</a></p>
 </header>
 <main>
     <?
          include("dbconcomplex.php");
-         if(isset($_GET['wellregistration'])) {
-          $WellRegistration = $_GET['wellregistration'];
+         if(isset($_POST['wellregistration'])) {
+          $WellRegistration = $_POST['wellregistration'];
           $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegistration'";
         }
         else {
-        $sql_query = "SELECT DISTINCT (WellRegistration), PercSand, Hydrocarbon, Cored FROM coredukwells";
+        $sql_query = "SELECT DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
 
         $result = $db->query($sql_query);
