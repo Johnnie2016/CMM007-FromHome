@@ -14,7 +14,7 @@
     <?
          include("dbconcomplex.php");
          if(isset($_POST['wellregistration'])) {
-          $WellRegistration = $_POST['wellregistration'];
+          $WellRegistration = $_GET['wellregistration'];
           $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegistration'";
         }
         else {
