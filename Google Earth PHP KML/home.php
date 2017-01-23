@@ -6,16 +6,18 @@
 </head>
 <body>
 <header>
-<h1>Hello, logged in OK then ?</h1><p>
+<h2>Hello, now you have logged in, </h2><br>
 
-<h3>How would you like to search ?</h3><p>
+<h2>how would you like to search ?</h2><p>
 
-Click here to go straight to the North Sea UKCS as seen in Google Earth.<p>
+Click here to open Google Earth and go straight to the North Sea UKCS.<p>
 N.B. - In order to use this you will need to have Google Earth installed.
+
+<!-- Link to Google Earth download here -->
 
 <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Open Google Earth...</a></p>
 
-<h3>Or would you like to search manually below ?</h3><p>
+<h2>Or would you like to search manually below to view a listed version of the data?</h2><p>
 </header>
 <main>
 
@@ -46,7 +48,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
     <p>
 
         <form action="displayWellregTestDB.php" method="post">
-            <p>Select the Well registration of the test data you are interested in</p>
+            <p>Select the Well registration of the well data you are interested in</p>
             <select name="wellregistration">
                 <?php
                 include ("dbconcomplex.php");
