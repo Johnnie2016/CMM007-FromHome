@@ -14,8 +14,8 @@
     <?
          include("dbconcomplex.php");
          if(isset($_GET['wellregistrationtestdb'])) {
-          $WellRegistration = $_GET['wellregistrationtestdb'];
-          $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegistration'";
+          $WellRegtest = $_GET['wellregistrationtestdb'];
+          $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
         }
         else {
         $sql_query = "SELECT DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
