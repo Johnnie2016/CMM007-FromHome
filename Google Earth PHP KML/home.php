@@ -55,8 +55,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
                 $result = $db->query($sql_query);
                 while($row = $result->fetch_array()) {
                     $WellID = $row['WellID'];
-                    $WellRegistration = $row['WellRegistration'];
-                    $id = $row['ID'];
+                    $id = $row['WellRegistration'];
                     echo "<option value='{$id}'>{$WellRegistration}</option>";
                 }
                 ?>
