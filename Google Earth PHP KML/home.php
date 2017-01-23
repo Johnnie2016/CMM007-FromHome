@@ -26,7 +26,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
         <select name="wellregistration">
             <?php
             include ("dbconcomplex.php");
-            $sql_query = "SELECT * FROM dealexportapr";
+            $sql_query = "select distinct Well_Reg_No from dealexportapr";
             $result = $db->query($sql_query);
             while($row = $result->fetch_array()) {
                 $RowID = $row['RowID'];
