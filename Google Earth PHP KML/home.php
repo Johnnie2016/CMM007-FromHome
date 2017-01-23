@@ -46,7 +46,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
     <!--Another form could be here-->
     <p>
 
-        <form action="displayWellregTestDB.php" method="post">
+        <form action="displayWellregTestDB.php" method="get">
             <p>Select the Well registration of the well data you are interested in</p>
             <select name="wellregistration">
                 <?php
