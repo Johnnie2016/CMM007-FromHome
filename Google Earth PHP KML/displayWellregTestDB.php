@@ -38,11 +38,3 @@
 </main>
 </body>
 </html>
-
-<!-- and if I were select from a database I would use DISTINCT(col) where column is where its looking for unique entries: -->
-
-$sql = mysql_query("SELECT DISTINCT(unique_column) from table");
-while($row = mysql_fetch_array($sql)) {
-$uniquevalue = $row['unique value'];
-echo $unique_value;
-}
