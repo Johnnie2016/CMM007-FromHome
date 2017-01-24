@@ -18,7 +18,7 @@
           $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
         }
         else {
-        $sql_query = "SELECT DISTINCT WellRegistration, PercSand, Hydrocarbon, Cored FROM coredukwells";
+        $sql_query = "SELECT DISTINCT WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
 
         $result = $db->query($sql_query);
@@ -31,7 +31,7 @@
        $Hydrocarbon = $row['Hydrocarbon'];
        $Cored = $row['Cored'];
        echo "<article>
-             <p> The Well with Well Registration<strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>and contains the following percentage of sand<strong>{$PercSand}</strong> and was cored (Y or N) <strong>{$Cored}</strong> </p></article>";
+             <p> The Well with Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong> and contains the following percentage of sand <strong>{$PercSand}. </strong>  Was cored ? <strong>{$Cored}</strong> </p></article>";
       }
     ?>
 
