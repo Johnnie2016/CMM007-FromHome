@@ -13,19 +13,20 @@
 <main>
     <?
          include("dbconcomplex.php");
-         $WellRegtest = $_POST["wellregistrationtestdb"];
+          if(isset($_GET['wellregistrationtestdb'])) {
+          $WellRegtest = $_GET['wellregistrationtestdb'];
 
-          $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
-        
+         $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
+        }
         else {
-        $sql_query = "SELECT DISTINCT WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
+        $sql_query = "SELECT DISTINCT (WellRegistration), WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
 
         $result = $db->query($sql_query);
       while($row = $result->fetch_array())
       {
-       $ID = $row['ID'];
-       $WellID = $row['WellID'];
+       $idtest = $row['ID'];
+       $wellID = $row['WellID'];
        $WellRegistration = $row['WellRegistration'];
        $PercSand = $row['PercSand'];
        $Hydrocarbon = $row['Hydrocarbon'];
@@ -44,3 +45,6 @@
 <!-- if(isset($_GET['wellregistrationtestdb'])) {
           $WellRegtest = $_GET['wellregistrationtestdb'];
           $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";}  -->
+
+
+<!-- $WellRegtest = $_POST["wellregistrationtestdb"]; -->
