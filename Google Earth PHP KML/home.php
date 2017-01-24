@@ -57,8 +57,6 @@ N.B. - In order to use this you will need to have Google Earth installed.
                     $WellRegtest = $row['WellRegistration'];
                     $idtest = $row['ID'];
                     $wellID = $row ['WellID'];
-                    $result = array_unique($row);
-                    foreach($result as $row['WellRegistration'] => $WellRegtest) {};
                     echo "<option value='{$idtest}'>{$WellRegtest}</option>";
                 }
                 ?>
@@ -70,3 +68,6 @@ N.B. - In order to use this you will need to have Google Earth installed.
 
 </body>
 </html>
+
+<!-- $result = array_unique($row);
+                    foreach($result as $row['WellRegistration'] => $WellRegtest) {echo $WellRegtest}; -->
