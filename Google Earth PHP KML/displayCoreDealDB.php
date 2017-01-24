@@ -19,7 +19,7 @@
          $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
         }
         else {
-        $sql_query = "SELECT * FROM dealexportapr";
+        $sql_query = "SELECT * FROM dealexportapr where DISTINCT (Well_Reg_No)";
         }
 
         $result = $db->query($sql_query);
@@ -35,7 +35,7 @@
           $Preservation = $row['Preservation'];
        echo "<article>
              <p> The Well with Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has the a top depth of <strong>{$TopDepth}</strong>
-              <p>a bottom depth of <strong>{$BottomDepth}</strong> core number is <strong>{$Cored}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
+              <p>a bottom depth of <strong>{$BottomDepth}</strong> core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
       }
     ?>
 
