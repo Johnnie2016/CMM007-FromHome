@@ -13,8 +13,8 @@
 <main>
     <?
          include("dbconcomplex.php");
-         if(isset($_GET['wellregistrationtestdb'])) {
-          $WellRegtest = $_GET['wellregistrationtestdb'];
+         $WellRegtest = $_POST["wellregistrationtestdb"];
+
           $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
         }
         else {
@@ -38,3 +38,8 @@
 </main>
 </body>
 </html>
+
+
+
+<!-- if(isset($_GET['wellregistrationtestdb'])) {
+          $WellRegtest = $_GET['wellregistrationtestdb']; -->
