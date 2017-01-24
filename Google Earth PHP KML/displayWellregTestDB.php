@@ -16,7 +16,7 @@
          $WellRegtest = $_POST["wellregistrationtestdb"];
 
           $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
-        }
+        
         else {
         $sql_query = "SELECT DISTINCT WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
@@ -42,4 +42,5 @@
 
 
 <!-- if(isset($_GET['wellregistrationtestdb'])) {
-          $WellRegtest = $_GET['wellregistrationtestdb']; -->
+          $WellRegtest = $_GET['wellregistrationtestdb'];
+          $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";}  -->
