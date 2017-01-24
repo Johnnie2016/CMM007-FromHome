@@ -28,7 +28,6 @@ N.B. - In order to use this you will need to have Google Earth installed.
             $sql_query = "select distinct Well_Reg_No from dealexportapr";
             $result = $db->query($sql_query);
             while($row = $result->fetch_array()) {
-                $RowID = $row['RowID'];
                 $WellRegistration = $row['Well_Reg_No'];
                 $SampleType = $row['Sample_Type_Deal'];
                 $Feet = $row['Ft'];
@@ -53,10 +52,13 @@ N.B. - In order to use this you will need to have Google Earth installed.
                 include ("dbconcomplex.php");
                 $sql_query = "select distinct WellRegistration from coredukwells";
                 $result = $db->query($sql_query);
-                while($row = $result->fetch_array()) {
+                while($row = $result->fetch_array())
+                {
                     $WellRegtest = $row['WellRegistration'];
                     $idtest = $row['ID'];
                     $wellID = $row ['WellID'];
+                    $result = array_unique($row);
+                    foreach($result as $WellRegtest -> $row['WellRegistration']){ }
                     echo "<option value='{$idtest}'>{$WellRegtest}</option>";
                 }
                 ?>
