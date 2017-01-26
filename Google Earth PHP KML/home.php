@@ -17,7 +17,6 @@ N.B. - In order to use this you will need to have Google Earth installed.
 <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Fly to Google Earth...</a></p>
 <p>
 <h2>Or would you like to search manually below to view a listed version of the data?</h2><p>
-<br><p><a href="index.php">Return to home...</a></p>
 </header>
 <main>
 
@@ -64,6 +63,8 @@ N.B. - In order to use this you will need to have Google Earth installed.
             </select><br><p>
             <input type="submit" text="Display Well details">
         </form>
+
+<br><br><p><a href="index.php">Return to home...</a></p>
 
 </main>
 
