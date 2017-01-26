@@ -7,6 +7,9 @@
 </head>
 <body>
 <h1>Please login with your username and password</h1>
+
+<p><a href="newuserform.html">If you do not have an account, please register an account here...</a></p>
+
 <div class="loginBox">
     <h3>Login Form</h3>
     <br><br>
