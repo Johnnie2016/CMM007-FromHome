@@ -60,7 +60,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
                     echo "<option value='{$idtest}'>{$WellRegtest}</option>";
                 }
                 ?>
-            </select><br><p>
+            </select><br>
             <input type="submit" text="Display Well details">
         </form>
 

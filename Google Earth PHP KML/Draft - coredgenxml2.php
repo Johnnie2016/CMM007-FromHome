@@ -62,9 +62,9 @@ $namenode = $dom->createElement("OrigID",htmlentities ($row['OrigID']));
 $placenode->appendChild($namenode);
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);
-$descriptionnode=$dom->createElement("description");
-$descriptionnode->appendChild($descriptioncdata);
-$placenode->appendChild($descriptionnode);
+//$descriptionnode=$dom->createElement("description");
+//$descriptionnode->appendChild($descriptioncdata);
+//$placenode->appendChild($descriptionnode);
 $coor = $row['LonDD'] . "," . $row['LatDD'];
 $pointnode = $dom->createElement("Point");
 $placenode->appendChild($pointnode);
