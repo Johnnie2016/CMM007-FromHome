@@ -64,7 +64,7 @@ N.B. - In order to use this you will need to have Google Earth installed.
             <input type="submit" text="Display Well details">
         </form>
 
-<br><br><p><a href="index.php">Return to home...</a></p>
+
 
 </main>
 

@@ -8,7 +8,7 @@
 <header>
     <h1>Data4WellCore</h1>
     <h2>Display Wells selected via Well registration number</h2>
-    <p><a href="home.php">Return to home...</a></p>
+    <p><a href="home.php">Return to search page...</a></p>
 </header>
 <main>
     <?
