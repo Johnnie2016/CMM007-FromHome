@@ -41,7 +41,7 @@
     <Document>
       <name>Fly to test</name>
       <NetworkLink>
-        <name>Original Name on Client Side - Google Earth side</name>
+        <name>To view well data, please right click and select "Refresh". Move the mouse to a new location and "Refresh" again for a new set of wells</name>
 		<open>1</open>
         <description>
         Does it pull back the data ?
