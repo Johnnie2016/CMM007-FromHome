@@ -58,7 +58,7 @@ die("Invalid query: " . mysql_error());
 while ($row = @mysql_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
 $placenode = $parnode->appendChild($node);
-$namenode = $dom->createElement("OrigID",htmlentities ($row['OrigID']));
+$namenode = $dom->createElement("name",htmlentities ($row['ID']));
 $placenode->appendChild($namenode);
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);

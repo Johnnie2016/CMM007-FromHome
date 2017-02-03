@@ -32,7 +32,7 @@
        $Hydrocarbon = $row['Hydrocarbon'];
        $Cored = $row['Cored'];
        echo "<article>
-             <p> The Well with Well Registration <strong>{$WellRegistration}</strong> has the ID <strong>{$idtest}</strong> has the WellID <strong>{$WellID}</strong> and contains the following percentage of sand <strong>{$PercSand}. </strong>  Was cored ? <strong>{$Cored}</strong> </p></article>";
+             <p> Well Registration <strong>{$WellRegistration}</strong> has ID <strong>{$idtest}</strong> and has WellID <strong>{$WellID}.</strong> It contains the following percentage of sand <strong>{$PercSand}. </strong>  Was it cored ? <strong>{$Cored}</strong> </p></article>";
       }
     ?>
 

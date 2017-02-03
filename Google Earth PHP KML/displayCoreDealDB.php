@@ -34,8 +34,8 @@
        $CoreNo = $row['Core_No'];
           $Preservation = $row['Preservation'];
        echo "<article>
-             <p> The Well with Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has the a top depth of <strong>{$TopDepth}</strong>
-              <p>a bottom depth of <strong>{$BottomDepth}</strong> core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
+             <p> Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has a top depth of <strong>{$TopDepth}</strong>
+              <p>and a bottom depth of <strong>{$BottomDepth}.</strong> The core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
       }
     ?>
 

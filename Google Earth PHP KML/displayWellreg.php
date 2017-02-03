@@ -7,7 +7,7 @@
 <body>
 <header>
     <h1>Data4WellCore</h1>
-    <h2>Display Wells select via Well registration number</h2>
+    <h2>Display Wells selected via Well registration number</h2>
     <p><a href="home.php">Return to search page...</a></p>
 </header>
 <main>
@@ -32,7 +32,7 @@
        $Hydrocarbon = $row['Hydrocarbon'];
        $Cored = $row['Cored'];
        echo "<article>
-             <p> The Well with Well Registration<strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>and contains the following percentage of sand<strong>{$PercSand}</strong> and was cored (Y or N) <strong>{$Cored}</strong> </p></article>";
+             <p> Well Registration<strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>and contains the following percentage of sand<strong>{$PercSand}.</strong> Was it cored ? <strong>{$Cored}</strong> </p></article>";
       }
     ?>
 
