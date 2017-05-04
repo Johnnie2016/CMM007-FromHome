@@ -44,7 +44,7 @@
 
 <br><br>
 <footer class="grid-66">
-    <p>(c)2017 John Morrison</p>
+    <p>(c)John Morrison 2017</p>
 </footer>
 
 
