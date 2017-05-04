@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Well Registration selection</title>
+    <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' type='text/css'>
 </head>
+
 <body>
 <header>
+    <img src="assets/images/gusherderrick.png" alt="Struck oil" id="gusherderrick">
+    <img src="assets/images/Header%20logo%20Orange.PNG" alt="header" id="headerlogo">
+    <br>
     <h1>Data4WellCore</h1>
     <h2>Display Wells select via Well registration number</h2>
-    <p><a href="home.php">Return to home...</a></p>
+    <p><a href="home.php">Return to search page...</a></p>
 </header>
 <main>
     <?php
@@ -32,7 +39,8 @@
        $Hydrocarbon = $row['Hydrocarbon'];
        $Cored = $row['Cored'];
        echo "<article>
-             <p> The Well with Well Registration<strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>and contains the following percentage of sand<strong>{$PercSand}</strong> and was cored (Y or N) <strong>{$Cored}</strong> </p></article>";
+             <p>Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>and contains the following percentage of sand <strong>{$PercSand}</strong>.
+              <br>Hydrocarbons shows <strong>{$Hydrocarbon}</strong>Was it cored ? <strong>{$Cored}</strong> </p></article>";
       }
     ?>
 

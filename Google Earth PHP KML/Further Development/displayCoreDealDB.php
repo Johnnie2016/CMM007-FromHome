@@ -15,7 +15,7 @@
     <br>
     <h1>Data4WellCore</h1>
     <h2>Display Core details via Well registration number</h2>
-    <p><a href="home.php">Return to home...</a></p>
+    <p><a href="home.php">Return to search page...</a></p>
 </header>
 
 <main>
@@ -45,8 +45,8 @@
             $Preservation = $row['Preservation'];
             echo
             "<article>
-             <p> The Well with Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has the a top depth of <strong>{$TopDepth}</strong>
-             <p>a bottom depth of <strong>{$BottomDepth}</strong> core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p>
+             <p>Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has the a top depth of <strong>{$TopDepth}</strong>
+             <br>a bottom depth of <strong>{$BottomDepth}</strong> the core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></br>
              </article>";
          }
     ?>
