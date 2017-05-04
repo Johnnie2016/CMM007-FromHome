@@ -17,16 +17,16 @@
     <br>
     <h2>Hello, now you have logged in, you have a choice of search methods</h2>
 
-    <h2>To carry out a manual search and view a listed version of the data,<br>
+    <h3>To carry out a manual search and view a listed version of the data,<br>
     use the drop down selector for either the core data or below it, well data.<br>
-    a list of the relavant data will be retrieved and displayed.</h2><p>
+    a list of the relavant data will be retrieved and displayed.</h3><p>
 </header>
 
 
 <main>
 
     <form action="displayCoreDealDB.php" method="post">
-        <p>Select the Well registration of the core data you are interested in</p>
+        <h3>Select the Well registration of the core data you are interested in</h3>
         <select name="wellregistration">
 
             <?php
@@ -55,7 +55,7 @@
 
     <br>
     <form action="displayWellregTestDB.php" method="post">
-        <p>Select the Well registration of the well data you are interested in</p>
+        <h4>Select the Well registration of the well data you are interested in</h4>
         <select name="wellregistrationtestdb">
 
             <?php
@@ -75,15 +75,15 @@
             <input type="submit" text="Display Well details">
     </form>
 
-    <h2>Click here to open Google Earth and go straight to the North Sea UKCS.
-        N.B. - In order to use this you will need to have Google Earth installed. A link to do this can be found here:</h2>
+    <h3>Click here to open Google Earth and go straight to the North Sea UKCS.
+        N.B. - In order to use this you will need to have Google Earth installed. A link to do this can be found here:</h3>
 
     <!-- Link to Google Earth download page -->
     <link href="https://www.google.co.uk/earth/download/gep/agree.html">
 
 
-    <h2>To go to the starting point in the UK North Sea, click below. All wells within a 200 mile radius of the starting <br> point will be displayed.
-    If you move the mouse, to a new position and click refresh, all wells within 200 miles of the new position will be displayed.</h2>
+    <h3>To go to the starting point in the UK North Sea, click below. All wells within a 200 mile radius of the starting <br> point will be displayed.
+    If you move the mouse, to a new position and click refresh, all wells within 200 miles of the new position will be displayed.</h3>
     <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Fly to Google Earth...</a></p>
 
 </main>
