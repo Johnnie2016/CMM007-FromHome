@@ -1,7 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Welcome</title>
+    <title>Welcome to Data4wellcore</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
