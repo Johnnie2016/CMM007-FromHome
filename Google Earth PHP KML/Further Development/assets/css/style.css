@@ -14,13 +14,11 @@
      width: 65px;
  }
 
- 
  #headerlogo
  {
      max-width: 280px;
  }
 
- 
  #coresamples
  {
      width: 200px;
@@ -34,19 +32,19 @@
 
  h1, h3 {
      font-family: 'Roboto', sans-serif;
-     font-weight: 300;
+     font-weight: 100;
  }
 
  
  p, h2, a{
      font-family: 'Roboto', sans-serif;
-     font-weight: 400;
+     font-weight: 250;
  }
 
  
  h4, h5 {
      font-family: 'Roboto', sans-serif;
-     font-weight: 700;
+     font-weight: 500;
  }
 
  
