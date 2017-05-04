@@ -31,9 +31,9 @@
 
 /* TEXT STYLING */
 
- h1, h3 {
+ h1 {
      font-family: 'Roboto', sans-serif;
-     font-weight: 200;
+     font-weight: 300;
  }
 
  
@@ -43,7 +43,7 @@
  }
 
  
- h4, h5 {
+ h3 {
      font-family: 'Roboto', sans-serif;
      font-weight: 100;
  }
