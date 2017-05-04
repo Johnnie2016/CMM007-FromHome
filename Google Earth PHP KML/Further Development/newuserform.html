@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Register by filling in the details requested below</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' type='text/css'>
 </head>
+
+
 <body>
+
 <header>
     <h1>Data4WellCore - Registration</h1>
-    <h2>Create a new user</h2>
-    <p><a href="index.php">Return to home...</a></p>
+    <p><a href="index.php">Return to login page...</a></p>
+    <h2>Create a new user by filling in the details requested below.</h2>
+    <img src="assets/images/gusherderrick.png" alt="Struck oil" id="gusherderrick">
+    <img src="assets/images/Header%20logo%20Orange.PNG" alt="header" id="headerlogo">
+
 </header>
-<main>
-    <form action="insertNewuser.php" method="post">
-        <input type="text" name="firstname" placeholder="First Name"><br><p>
-        <input type="text" name="lastname" placeholder="Last Name"><br><p>
-        <input type="email" name="emailaddress" placeholder="Email address"><br><p>
-        <input type="submit" text="Submit">
-    </form>
+
+
+
+<main class="grid-container">
+
+    <section class="grid-66">
+
+      <form action="insertNewuser.php" method="post">
+          <input type="text" name="firstname" placeholder="First Name"><br><p>
+          <input type="text" name="lastname" placeholder="Last Name"><br><p>
+          <input type="email" name="emailaddress" placeholder="Email address"><br><p>
+          <input type="submit" text="Submit">
+      </form>
+
+    </section>
+
 </main>
+
+
+
 </body>
 </html>
