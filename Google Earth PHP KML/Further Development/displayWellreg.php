@@ -39,11 +39,17 @@
        $Hydrocarbon = $row['Hydrocarbon'];
        $Cored = $row['Cored'];
        echo "<article>
-             <p>Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>and contains the following percentage of sand <strong>{$PercSand}</strong>.
+             <p>Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong> and contains percentage of sand <strong>{$PercSand}</strong>%
               <br>Hydrocarbons shows <strong>{$Hydrocarbon}</strong>Was it cored ? <strong>{$Cored}</strong> </p></article>";
       }
     ?>
 
 </main>
+
+<br><br>
+<footer class="grid-100">
+    <p>(c)John Morrison 2017</p>
+</footer>
+
 </body>
 </html>
