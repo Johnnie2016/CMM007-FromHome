@@ -18,27 +18,30 @@
 
 
 
-
-<h1>Please login with your username and password</h1>
-
-<p><a href="newuserform.html">If you do not have an account, please register for one here...</a></p>
-<br>
-<div class="loginBox">
-    <h3>Login Form</h3>
-    <form method="post" action="login.php">
-        <label>Username:</label><br>
-        <input type="text" name="username" placeholder="username"
-            /><br><br>
-        <label>Password:</label><br>
-        <input type="password" name="password" placeholder="password" />
-        <br><br>
-        <input type="submit" name="submit" value = "login"/>
-    </form>
-    <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?>
-        </div>
-</div>
+<main class="grid-container">
 
 
+  <section class="grid-66">
+    <h1>Please login with your username and password</h1>
+
+    <p><a href="newuserform.html">If you do not have an account, please register for one here...</a></p>
+    <br>
+    <div class="loginBox">
+      <h3>Login Form</h3>
+        <form method="post" action="login.php">
+            <label>Username:</label><br>
+            <input type="text" name="username" placeholder="username"/>
+            <br><br>
+            <label>Password:</label><br>
+            <input type="password" name="password" placeholder="password" />
+            <br><br>
+            <input type="submit" name="submit" value = "login"/>
+        </form>
+        <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
+    </div>
+  </section>
+
+</main>
 
 <footer class="grid-100">
     <p>(c)2017 John Morrison</p>
