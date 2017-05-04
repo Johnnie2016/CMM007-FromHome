@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <title>Login with your username and password</title>
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
     <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' type='text/css'>
 </head>
