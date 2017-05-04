@@ -16,8 +16,6 @@
 </header>
 
 
-
-
 <main class="grid-container">
 
 
@@ -41,7 +39,9 @@
     </div>
   </section>
 
+
 </main>
+
 <br><br>
 <footer class="grid-66">
     <p>(c)2017 John Morrison</p>
