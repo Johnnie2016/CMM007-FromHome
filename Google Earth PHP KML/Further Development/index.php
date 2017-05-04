@@ -37,5 +37,14 @@
     <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?>
         </div>
 </div>
+
+
+
+<footer class="grid-100">
+    <p>(c)2017 John Morrison</p>
+</footer>
+
+
+
 </body>
 </html>
