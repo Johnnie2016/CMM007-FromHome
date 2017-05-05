@@ -29,8 +29,8 @@
 
 
 
-             $result = $db->query($sql_query);
-             while($row = $result->fetch_array())
+            // $result = $db->query($sql_query);
+             // while($row = $result->fetch_array())
          {
             $ID = $row['RowID'];
             $WellRegistration = $row['Well_Reg_No'];
