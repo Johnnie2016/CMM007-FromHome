@@ -21,19 +21,16 @@
 <main>
     <?
          include("dbconcomplex.php");
-         if(isset($_GET['wellregistration']))
-         {
-            $WellRegistration = $_GET['wellregistration'];
+        // if(isset($_GET['wellregistration']))
+
+            $WellRegistration = $_POST['wellregistration'];
 
             $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
-         }
-            else
-            {
-            $sql_query = "SELECT * FROM dealexportapr";
-            }
 
-            $result = $db->query($sql_query);
-            while($row = $result->fetch_array())
+
+
+             $result = $db->query($sql_query);
+             while($row = $result->fetch_array())
          {
             $ID = $row['RowID'];
             $WellRegistration = $row['Well_Reg_No'];
