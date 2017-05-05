@@ -47,7 +47,7 @@
           To view data for the nearest 20 wells, right click and select "Refresh".
         </description>
         <Link>
-          <href>http://007intranetjohn.azurewebsites.net/Google Earth PHP KML/Draft - coredgenxml2.php</href>
+          <href>http://007intranetjohn.azurewebsites.net/Google Earth PHP KML/Further Development/Draft - coredgenxml2.php</href>
 		  <viewRefreshMode>onRequest</viewRefreshMode>
           <httpQuery>radius=400</httpQuery>
         </Link>
