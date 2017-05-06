@@ -61,9 +61,9 @@ $placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name"
 $placenode->appendChild($namenode);
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']
-        . !$name['name']
+        . !$name
         <p>
-    . !$description['description']);
+    . !$description);
 $descriptionnode=$dom->createElement("description");
 $descriptionnode->appendChild($descriptioncdata);
 $placenode->appendChild($descriptionnode);
