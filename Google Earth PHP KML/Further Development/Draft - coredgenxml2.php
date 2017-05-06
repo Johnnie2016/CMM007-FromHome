@@ -57,7 +57,7 @@ die("Invalid query: " . mysql_error());
 // Iterate through the rows, adding XML nodes for each
 while ($row = @mysql_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
-$placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ("<b>Well ID No.: </b> " . $row['WellID']));
+$placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ($row['WellID']));
 $placenode->appendChild($namenode);
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);
