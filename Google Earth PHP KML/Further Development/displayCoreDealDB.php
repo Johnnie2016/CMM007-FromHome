@@ -60,3 +60,8 @@
 
 </body>
 </html>
+
+   <!-- Once the dropdown gets selected and posted to your display page, use this code:
+
+$temp_rating = $_POST['rating_dropdown'];
+mysql_query("SELECT * FROM userdata WHERE rating = '$temp_rating'");  -->
