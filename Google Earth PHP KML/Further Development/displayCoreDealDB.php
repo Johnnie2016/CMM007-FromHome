@@ -27,7 +27,9 @@
 
             $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
             }
-
+            //else {
+                //$sql_query = "SELECT * FROM dealexportapr";
+            //}
 
              $result = $db->query($sql_query);
               while($row = $result->fetch_array())
@@ -42,8 +44,8 @@
             $Preservation = $row['Preservation'];
             echo
             "<article>
-             <p>Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has the a top depth of <strong>{$TopDepth}</strong>
-             <br>a bottom depth of <strong>{$BottomDepth}</strong> the core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></br>
+             <p>Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has the a top depth of <strong>{$TopDepth}</strong><strong>{$Feet}</strong>
+             <br>a bottom depth of <strong>{$BottomDepth}</strong><strong>{$Feet}</strong>. The core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></br>
              </article>";
          }
     ?>
