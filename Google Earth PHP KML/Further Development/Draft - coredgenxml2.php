@@ -60,10 +60,7 @@ $node = $dom->createElement("Placemark");
 $placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ($row['WellID']));
 $placenode->appendChild($namenode);
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
-$row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']
-        . !$name
-        <p>
-    . !$description);
+$row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);
 $descriptionnode=$dom->createElement("description");
 $descriptionnode->appendChild($descriptioncdata);
 $placenode->appendChild($descriptionnode);
