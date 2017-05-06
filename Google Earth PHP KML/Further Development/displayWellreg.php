@@ -14,7 +14,7 @@
     <img src="assets/images/Header%20logo%20Orange.PNG" alt="header" id="headerlogo">
     <br>
     <h1>Data4WellCore</h1>
-    <h2>Display Wells select via Well registration number</h2>
+    <h2>Display Wells selected via Well registration number</h2>
     <p><a href="home.php">Return to search page...</a></p>
 </header>
 <main>
@@ -23,10 +23,10 @@
 
          if(isset($_GET['wellregistration'])) {
          $WellRegistration = $_GET['wellregistration'];
-         $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored FROM coredUKHCorNotes where WellRegistration = '$WellRegistration'";
+         $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '$WellRegistration'";
         }
         else {
-            $sql_query = "SELECT WellRegistration, WellID FROM coredUKHCorNotes";
+            $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes";
         }
 
         $result = $db->query($sql_query);
@@ -39,7 +39,7 @@
        $Hydrocarbon = $row['Hydrocarbon'];
        $Cored = $row['Cored'];
        echo "<article>
-             <p>Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong> and contains percentage of sand <strong>{$PercSand}</strong>%
+             <p>Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>, the Original ID <strong>{$OrigID}</strong> and contains percentage of sand <strong>{$PercSand}</strong>%
               <br>Hydrocarbons shows <strong>{$Hydrocarbon}</strong>Was it cored ? <strong>{$Cored}</strong> </p></article>";
       }
     ?>

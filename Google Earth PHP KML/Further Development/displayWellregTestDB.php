@@ -27,7 +27,7 @@
          $sql_query = "SELECT WellRegistration, ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '$WellRegtest'";
         }
         else {
-        $sql_query = "SELECT DISTINCT (WellRegistration), ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
+        $sql_query = "SELECT WellRegistration, ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
         }
 
         $result = $db->query($sql_query);
