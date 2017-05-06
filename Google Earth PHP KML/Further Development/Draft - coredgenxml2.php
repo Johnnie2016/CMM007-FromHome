@@ -47,7 +47,7 @@ $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("
 ."radians(".$center_lat.") ) * cos( radians( LatDD ) ) * cos( radians( LonDD )"
 ."- radians(" . $center_lng . ") ) + sin( radians(".$center_lat.") ) *"
 ."sin( radians( LatDD ) ) ) ) AS distance FROM coredukwells HAVING distance < "
-.$radius. " ORDER BY distance LIMIT 0 , 20";
+.$radius. " ORDER BY distance LIMIT 0 , 20 trunc(distance, 3)";
 $result = mysql_query($query);
 if (!$result) {
 die("Invalid query: " . mysql_error());
@@ -57,7 +57,7 @@ die("Invalid query: " . mysql_error());
 // Iterate through the rows, adding XML nodes for each
 while ($row = @mysql_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
-$placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ("<b>Well ID:</b> " .$row['WellID']));
+$placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ($row['WellID']));
 $placenode->appendChild($namenode);
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);
