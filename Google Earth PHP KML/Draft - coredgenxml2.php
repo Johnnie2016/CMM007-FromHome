@@ -73,8 +73,3 @@ $pointnode->appendChild($coornode);
 echo $dom->saveXML();
 ?>
 
-//<![CDATA[
-$[name]
-<p>
-    $[description]
-    ]]>
