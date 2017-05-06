@@ -24,11 +24,11 @@
           if(isset($_GET['wellregistrationtestdb'])) {
           $WellRegtest = $_GET['wellregistrationtestdb'];
 
-         $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";
+         $sql_query = "SELECT WellRegistration, ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '$WellRegtest'";
         }
-        //else {
-        //$sql_query = "SELECT DISTINCT (WellRegistration), ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
-        //}
+        else {
+        $sql_query = "SELECT DISTINCT (WellRegistration), ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells";
+        }
 
         $result = $db->query($sql_query);
       while($row = $result->fetch_array())
