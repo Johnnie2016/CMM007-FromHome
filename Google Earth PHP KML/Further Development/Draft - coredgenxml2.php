@@ -48,7 +48,7 @@ $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("
 ."- radians(" . $center_lng . ") ) + sin( radians(".$center_lat.") ) *"
 ."sin( radians( LatDD ) ) ) ) AS distance FROM coredukwells HAVING distance < "
 .$radius. " ORDER BY distance LIMIT 0,20";
-$result = mysql_query($query);
+$result = mysqli_query($query);
 if (!$result) {
 die("Invalid query: " . mysqli_error());
 }
