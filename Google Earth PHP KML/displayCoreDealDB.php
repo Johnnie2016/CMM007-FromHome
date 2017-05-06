@@ -15,6 +15,7 @@
          include("dbconcomplex.php");
          if(isset($_GET['wellregistration'])) {
           $WellRegistration = $_GET['wellregistration'];
+             //$WellRegistration = $_POST['wellregistration'];
 
          $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
         }
@@ -34,8 +35,8 @@
        $CoreNo = $row['Core_No'];
           $Preservation = $row['Preservation'];
        echo "<article>
-             <p> Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has a top depth of <strong>{$TopDepth}</strong>
-              <p>and a bottom depth of <strong>{$BottomDepth}.</strong> The core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
+             <p> Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has a top depth of <strong>{$TopDepth}</strong><strong>{$Feet}</strong>
+              <p>and a bottom depth of <strong>{$BottomDepth}</strong><strong>{$Feet}</strong>. The core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
       }
     ?>
 
