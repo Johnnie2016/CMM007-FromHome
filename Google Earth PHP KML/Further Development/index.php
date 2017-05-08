@@ -32,7 +32,7 @@
             <label>Password:</label><br>
             <input type="password" name="password" placeholder="password" />
             <br><br>
-            <input type="submit" name="submit" value = "login"/>
+            <input type="submit" name="submit" value = "Login"/>
         </form>
         <div class="error"><?php //echo $error;?><?php //echo $username; echo $password;?></div>
     </div>
