@@ -27,7 +27,6 @@
     <form action="displayCoreDealDB.php" method="post">
         <h3>Select the Well registration of the core data you are interested in</h3>
         <select name="wellregistration">
-
             <?php
             include ("dbconcomplex.php");
             $sql_query = "select distinct Well_Reg_No from dealexportapr";
@@ -45,7 +44,6 @@
                 echo "<option value='{$id}'>{$WellRegistration}</option>";
             }
             ?>
-
         </select><br><br>
             <input type="submit" text="Display Core details">
     </form>
