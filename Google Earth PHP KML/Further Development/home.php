@@ -26,7 +26,7 @@
 
     <form action="displayCoreDealDB.php" method="post">
         <h3>Select the Well registration of the core data you are interested in</h3>
-        <select name="wellregistration">
+        <select name='wellregistration'>
 
             <?php
             include ("dbconcomplex.php");
