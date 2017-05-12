@@ -8,7 +8,7 @@
 <header>
     <h1>Data4WellCore</h1>
     <h2>Display Core details via Well registration number</h2>
-    <p><a href="home.php">Return to search page...</a></p>
+    <p><a href="superheroform.php">Return to search page...</a></p>
 </header>
 <main>
     <?
@@ -16,8 +16,8 @@
 
          if(isset($_POST["wellregistration"])) {
 
-          $wellregistration = $_POST["wellregistration"];
-          echo $wellregistration;
+          //$wellregistration = $_POST["wellregistration"];
+          //echo $wellregistration;
 
          $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr WHERE Well_Reg_No = '$wellregistration'";
         }
