@@ -2,9 +2,8 @@
 <head>
     <meta charset="utf-8">
     <title>Welcome to Data4wellcore</title>
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
-    <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' type='text/css'>
 </head>
 
@@ -12,7 +11,7 @@
 <body>
 
 <header>
-    <img src="assets/images/gusherderrick.png" alt="Struck oil" id="gusherderrick">
+    <img src="assets/images/gusherderrick.PNG" alt="Struck oil" id="gusherderrick">
     <img src="assets/images/Header%20logo%20Orange.PNG" alt="header" id="headerlogo">
     <br>
     <h2>Hello, now you have logged in, you have a choice of search methods</h2>
@@ -35,14 +34,14 @@
             $result = $db->query($sql_query);
             while($row = $result->fetch_array())
             {
-                $WellRegistration = $row['Well_Reg_No'];
-                $SampleType = $row['Sample_Type_Deal'];
-                $Feet = $row['Ft'];
-                $TopDepth = $row['Top_Depth'];
-                $BottomDepth = $row['Bottom_Depth'];
-                $Preservation = $row['Preservation'];
-                $CoreNo = $row['Core_No'];
-                $id = $row['RowID'];
+                $WellRegistration = $row["Well_Reg_No"];
+                $SampleType = $row["Sample_Type_Deal"];
+                $Feet = $row["Ft"];
+                $TopDepth = $row["Top_Depth"];
+                $BottomDepth = $row["Bottom_Depth"];
+                $Preservation = $row["Preservation"];
+                $CoreNo = $row["Core_No"];
+                $id = $row["RowID"];
                 echo "<option value='{$id}'>{$WellRegistration}</option>";
             }
             ?>
@@ -64,9 +63,9 @@
             $result = $db->query($sql_query);
             while($row = $result->fetch_array())
                 {
-                    $WellRegtest = $row['WellRegistration'];
-                    $idtest = $row['ID'];
-                    $wellID = $row ['WellID'];
+                    $WellRegtest = $row["WellRegistration"];
+                    $idtest = $row["ID"];
+                    $wellID = $row ["WellID"];
                     echo "<option value='{$idtest}'>{$WellRegtest}</option>";
                 }
                 ?>
@@ -100,3 +99,5 @@
 
 <!-- $result = array_unique($row);
                     foreach($result as $row['WellRegistration'] => $WellRegtest) {echo $WellRegtest}; -->
+
+
