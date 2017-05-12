@@ -14,19 +14,12 @@
     <?
          //include("dbconcomplex.php");
 
-    $firstname = $_POST["firstname"];
-    $lastname = $_POST["lastname"];
-    $superheroname = $_POST["superheroName"];
-    $mainsuperpower = $_POST["mainSuperpower"];
-
-
-
          if(isset($_POST["wellregistration"])) {
 
-          $WellRegistration = $_POST["wellregistration"];
-          echo $WellRegistration;
+          $wellregistration = $_POST["wellregistration"];
+          echo $wellregistration;
 
-         $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
+         $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr WHERE Well_Reg_No = '$wellregistration'";
         }
         else {
         $sql_query = "SELECT * FROM dealexportapr";
@@ -36,7 +29,7 @@
       while($row = $result->fetch_array())
       {
        $ID = $row['RowID'];
-       $WellRegistration = $row['Well_Reg_No'];
+       $wellregistration = $row['Well_Reg_No'];
        $SampleType = $row['Sample_Type_Deal'];
        $Feet = $row['Ft'];
        $TopDepth = $row['Top_Depth'];
@@ -45,7 +38,7 @@
           $Preservation = $row['Preservation'];
 
        echo "<article>
-             <p> Well Registration <strong> {$WellRegistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has a top depth of <strong>{$TopDepth}</strong><strong>{$Feet}</strong>
+             <p> Well Registration <strong> {$wellregistration} </strong> has samples of type <strong> {$SampleType}</strong> in storage which has a top depth of <strong>{$TopDepth}</strong><strong>{$Feet}</strong>
               <p>and a bottom depth of <strong>{$BottomDepth}</strong><strong>{$Feet}</strong>. The core number is <strong>{$CoreNo}</strong> and the type of preservation is <strong> {$Preservation} </strong></p></article>";
       }
     ?>
