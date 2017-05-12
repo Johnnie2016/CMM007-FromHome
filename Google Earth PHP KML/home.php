@@ -38,8 +38,8 @@ N.B. - In order to use this you will need to have Google Earth installed.
         $id = $row['RowID'];
         echo "<option value='{$id}'>{$WellRegistration}</option>";
     }
-    $id = array("1", "2", "3", "4", "5", "6", "7");
-    $WellRegistration= array("well 1","well 2","well 3" );
+    //$id = array("1", "2", "3", "4", "5", "6", "7");
+    //$WellRegistration= array("well 1","well 2","well 3" );
     ?>
 
     <form action="displayCoreDealDB.php" method="post">
