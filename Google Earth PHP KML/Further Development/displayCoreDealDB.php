@@ -23,13 +23,13 @@
          include("dbconcomplex.php");
             //if(isset($_POST['wellregistration'])) {
 
-            {
+            //{
             $WellRegistration = $_POST["wellregistration"];
             echo $WellRegistration;
             $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
-            }
-            //else {
-            //    $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr";
+            //}
+            else //{
+                $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr";
             //}
 
              $result = $db->query($sql_query);
