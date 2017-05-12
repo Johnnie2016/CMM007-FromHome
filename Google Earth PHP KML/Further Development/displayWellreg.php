@@ -21,8 +21,8 @@
     <?php
          include("dbconcomplex.php");
 
-         if(isset($_GET['wellregistration'])) {
-         $WellRegistration = $_GET['wellregistration'];
+         if(isset($_POST['wellregistration'])) {
+         $WellRegistration = $_POST['wellregistration'];
          $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '$WellRegistration'";
         }
         else {
