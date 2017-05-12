@@ -19,7 +19,7 @@
           //$wellregistration = $_POST["wellregistration"];
           //echo $wellregistration;
 
-         $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr WHERE Well_Reg_No = '$wellregistration'";
+         $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr WHERE Well_Reg_No = 'wellregistration'";
         }
         else {
         $sql_query = "SELECT * FROM dealexportapr";
