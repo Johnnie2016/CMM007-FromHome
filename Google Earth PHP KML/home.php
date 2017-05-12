@@ -20,6 +20,46 @@ N.B. - In order to use this you will need to have Google Earth installed.
 </header>
 <main>
 
+    <?php
+    //sql stuff here and populate array for id and $WellRegistration
+
+    include ("dbconcomplex.php");
+    $sql_query = "select distinct Well_Reg_No from dealexportapr";
+    $result = $db->query($sql_query);
+    while($row = $result->fetch_array())
+    {
+        $WellRegistration = $row['Well_Reg_No'];
+        $SampleType = $row['Sample_Type_Deal'];
+        $Feet = $row['Ft'];
+        $TopDepth = $row['Top_Depth'];
+        $BottomDepth = $row['Bottom_Depth'];
+        $Preservation = $row['Preservation'];
+        $CoreNo = $row['Core_No'];
+        $id = $row['RowID'];
+        echo "<option value='{$id}'>{$WellRegistration}</option>";
+    }
+    $id = array("1", "2", "3", "4", "5", "6", "7");
+    $WellRegistration= array("well 1","well 2","well 3" );
+    ?>
+
+    <form action="displayCoreDealDB.php" method="post">
+        <p>Select the Well registration of the core data you are interested in</p>
+        <select name="wellregistration">
+
+            <?php
+            $cnt=count($id);
+            for ($x = 0; $x <$cnt; $x++) {
+                echo "<option value='{$id[$x]}'>{$WellRegistration[$x]}</option>";
+            }
+            ?>
+
+        </select><br><p>
+            <input type="submit" name="Display Core details">
+    </form>
+
+
+
+
     <form action="displayCoreDealDB.php" method="post">
         <p>Select the Well registration of the core data you are interested in</p>
         <select name="wellregistration">
