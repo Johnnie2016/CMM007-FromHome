@@ -34,12 +34,12 @@
             while($row = $result->fetch_array())
             {
                 $WellRegistration = $row["Well_Reg_No"];
-                $SampleType = $row["Sample_Type_Deal"];
-                $Feet = $row["Ft"];
-                $TopDepth = $row["Top_Depth"];
-                $BottomDepth = $row["Bottom_Depth"];
-                $Preservation = $row["Preservation"];
-                $CoreNo = $row["Core_No"];
+                //$SampleType = $row["Sample_Type_Deal"];
+                //$Feet = $row["Ft"];
+                //$TopDepth = $row["Top_Depth"];
+                //$BottomDepth = $row["Bottom_Depth"];
+                //$Preservation = $row["Preservation"];
+                //$CoreNo = $row["Core_No"];
                 $id = $row["RowID"];
                 echo "<option value='{$id}'>{$WellRegistration}</option>";
             }
