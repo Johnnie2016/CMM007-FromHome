@@ -21,6 +21,12 @@
 <main>
     <?
          include("dbconcomplex.php");
+            //if(isset($_POST["wellregistration"])) {
+            //$WellRegistration = $_POST["wellregistration"];
+            //echo $WellRegistration;
+
+            // I know I am not supposed to use GET on the receiving page but at least I get ALL rows in the Dbase returned
+            // as opposed to nothing being returned when I try the POST as greyed out above.
             if(isset($_GET["wellregistration"])) {
             $WellRegistration = $_GET["wellregistration"];
             echo $WellRegistration;
