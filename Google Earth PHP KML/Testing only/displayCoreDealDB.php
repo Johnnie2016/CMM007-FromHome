@@ -14,7 +14,7 @@
     <?
          include("dbconcomplex.php");
          $wellregistration = $_POST["wellregistration"];
-         //echo $wellregistration;
+         echo $wellregistration;
 
          if(isset($_POST["wellregistration"])) {
 
