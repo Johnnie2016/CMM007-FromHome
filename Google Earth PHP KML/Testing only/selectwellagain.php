@@ -15,7 +15,7 @@ if (mysqli_query($db, $sql_query)) {
     echo "Error: " . $sql . "<br>" . mysqli_error($db);
 }
 
-header("location:selectwellform.php");
+header("location:selectwellformagain.php");
 ?>
 
 <!-- Why is this not working -->
