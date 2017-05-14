@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Superhero</title>
+    <title>Data retrieval</title>
 </head>
 <body>
 <header>
-    <h1>The Super-Superhero System</h1>
-    <h2>Create a Superhero</h2>
+    <h1>Data4WellCore System</h1>
+    <h2>Retrieve relevant data</h2>
     <p><a href="index.php">Return to home...</a></p>
 </header>
 <main>
