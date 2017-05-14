@@ -13,8 +13,8 @@
 <main>
     <?
          include("dbconcomplex.php");
-         $wellregistration = $_POST["wellregistration"];
-         //$wellregistration = $_GET["wellregistration"];
+         //$wellregistration = $_POST["wellregistration"];
+         $wellregistration = $_GET["wellregistration"];
          echo $wellregistration;
 
          if(isset($_POST["wellregistration"])) {
