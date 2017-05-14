@@ -47,8 +47,32 @@
         </select><br><br>
             <input type="submit" text="Display Core details">
     </form>
-
+    <br>
     <!--Another form could be here-->
+
+
+    <!-- Look at displayWellreg.php for which columns to echo out-->
+    <form action="displayWellreg.php" method="post">
+        <h3>Select the Well registration of the well data you are interested in</h3>
+        <select name="wellregistration">
+
+            <?php
+            include ("dbconcomplex.php");
+            $sql_query = "select distinct WellRegistration from coredukwells";
+            $result = $db->query($sql_query);
+            while($row = $result->fetch_array())
+            {
+                $WellRegtest = $row["WellRegistration"];
+                $idtest = $row["ID"];
+                $wellID = $row ["WellID"];
+                echo "<option value='{$idtest}'>{$WellRegtest}</option>";
+            }
+            ?>
+
+        </select><br><br>
+        <input type="submit" text="Display Well details">
+    </form>
+
 
     <br>
     <form action="displayWellregTestDB.php" method="post">
