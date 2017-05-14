@@ -44,4 +44,12 @@
 </body>
 </html>
 
-<!-- Why is this not working -->
+<!--
+<form action="formResponse.php" method="post">
+    <label>Surname </label><input type="text" name="surname"><br><br>
+    <label>Name </label><input type="text" name="name"><br><br>
+    <label>Gender </label><input type="text" name="gender"><br><br>
+    <label>Main Superhero Power </label><input type="text" name="power">
+    <input type="submit" value="Submit">
+</form>
+-->
