@@ -58,7 +58,7 @@
 
             <?php
             include ("dbconcomplex.php");
-            $sql_query = "select distinct WellRegistration from coredukwells";
+            $sql_query = "select distinct WellRegistration from coredUKHCorNotes";
             $result = $db->query($sql_query);
             while($row = $result->fetch_array())
             {
