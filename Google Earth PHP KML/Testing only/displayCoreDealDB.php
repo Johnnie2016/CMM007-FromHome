@@ -8,12 +8,13 @@
 <header>
     <h1>Data4WellCore</h1>
     <h2>Display Core details via Well registration number</h2>
-    <p><a href="selectwellform.php">Return to search page...</a></p>
+    <p><a href="home.php">Return to search page...</a></p>
 </header>
 <main>
     <?
          include("dbconcomplex.php");
          $wellregistration = $_POST["wellregistration"];
+         //$wellregistration = $_GET["wellregistration"];
          echo $wellregistration;
 
          if(isset($_POST["wellregistration"])) {
