@@ -24,7 +24,7 @@
 
     <form action="selectwellagain.php" method="post">
         <p>Select the Well registration of the core data you are interested in</p>
-        <select name="wellregistration">
+        <select name="wellregistration" id="wellregistration">
             <?php
             include ("dbconcomplex.php");
             $sql_query = "select distinct Well_Reg_No from dealexportapr";
