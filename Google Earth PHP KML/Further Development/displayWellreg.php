@@ -23,7 +23,7 @@
 
          if(isset($_POST['wellregistration'])) {
          $WellRegistration = $_POST['wellregistration'];
-         $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '$WellRegistration'";
+         $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = 'wellregistration'";
         }
         else {
             $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes";
