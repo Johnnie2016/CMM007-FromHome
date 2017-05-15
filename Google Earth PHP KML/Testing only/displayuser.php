@@ -55,7 +55,8 @@ while($row = $result->fetch_array())
                 $usernumber = $row['userid'];
                 $name = $row['username'];
                 $pword = $row ['password'];
-                echo "<option value='{$name}'>{$usernumber}</option>";
+                //echo "<option value='{$name}'>{$usernumber}</option>";
+                echo "<option value='{$usernumber}'>{$usernumber}</option>";
             }
             ?>
         </select><br>
