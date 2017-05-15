@@ -35,7 +35,7 @@
       while($row = $result->fetch_array())
       {
        $OrigID = $row['OrigID'];
-       $WellID = $row['WellID'];
+       $WellID = $row['RowID'];
        $WellRegistration = $row['WellRegistration'];
        $PercSand = $row['PercSand'];
        $Hydrocarbon = $row['Hydrocarbon'];

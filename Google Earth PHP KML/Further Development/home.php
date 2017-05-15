@@ -64,7 +64,7 @@
             {
                 $WellRegtest = $row["WellRegistration"];
                 //$id = $row["WellID"];
-                $WellID = $row ["RowID"];
+                $WellID = $row["RowID"];
                 echo "<option value='{$WellRegtest}'>{$WellRegtest}</option>";
             }
             ?>
