@@ -27,7 +27,7 @@
             $WellReg = $_POST["wellregistration"];
             echo $WellReg;
             //$sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = $WellReg";
-            $sql_query = "SELECT RowID, Well_Reg_No FROM dealexportapr where Well_Reg_No = ($WellReg)";
+            $sql_query = "SELECT Well_Reg_No FROM dealexportapr where Well_Reg_No = ($WellReg)";
             //else
                 //$sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr";
 
