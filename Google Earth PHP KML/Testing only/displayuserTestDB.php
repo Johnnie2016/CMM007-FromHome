@@ -21,9 +21,9 @@
 
         $sql_query = "SELECT userid, username, password FROM wellcoreusers WHERE userid = '$userselected'";
     }
-    else {
-        $sql_query = "SELECT * FROM wellcoreusers";
-    }
+    //else {
+        //$sql_query = "SELECT * FROM wellcoreusers";
+   // }
 
     $result = $db->query($sql_query);
     while($row = $result->fetch_array())
