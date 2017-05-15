@@ -19,7 +19,7 @@
 
     //if(isset($_POST["userselectionTestDB"])) {
 
-        $sql_query = "SELECT userid, username, password FROM wellcoreusers WHERE userid = '$userselected'";
+        $sql_query = "SELECT userid, username, password FROM wellcoreusers WHERE userid = $userselected";
     //}
     //else {
         //$sql_query = "SELECT * FROM wellcoreusers";
