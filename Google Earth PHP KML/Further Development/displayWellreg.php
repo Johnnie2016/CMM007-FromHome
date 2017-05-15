@@ -17,33 +17,36 @@
     <h2>Display Wells selected via Well registration number</h2>
     <p><a href="home.php">Return to search page...</a></p>
 </header>
-<main>
-    <?php
-         include("dbconcomplex.php");
 
-         //if(isset($_POST['wellregistration'])) {
-         $WellReg = $_POST["wellregistration"];
-         echo $WellReg;
-         $sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . $WellReg . "'";
+<main>
+
+    <?php
+           include("dbconcomplex.php");
+
+             //if(isset($_POST['wellregistration'])) {
+             $WellReg = $_POST["wellregistration"];
+           echo $WellReg . testtest;
+             $sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . $WellReg . "'";
 
         //}
         //else {
             //$sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes";
         //}
 
-        $result = $db->query($sql_query);
-      while($row = $result->fetch_array())
-      {
-          $WellID = $row['RowID'];
-          $OrigID = $row['OrigID'];
-          $WellRegistration = $row['WellRegistration'];
-          $PercSand = $row['PercSand'];
-          $Hydrocarbon = $row['Hydrocarbon'];
-          $Cored = $row['Cored'];
-       echo "<article>
+             $result = $db->query($sql_query);
+    echo $WellReg;
+           while($row = $result->fetch_array())
+           {
+               $WellID = $row['RowID'];
+               $OrigID = $row['OrigID'];
+               $WellRegistration = $row['WellRegistration'];
+               $PercSand = $row['PercSand'];
+               $Hydrocarbon = $row['Hydrocarbon'];
+               $Cored = $row['Cored'];
+           echo "<article>
              <p>Well Registration <strong>{$WellRegistration}</strong> has the WellID <strong>{$WellID}</strong>, the Original ID <strong>{$OrigID}</strong> and contains percentage of sand <strong>{$PercSand}</strong>%.
               <br>Remarks on Hydrocarbon indications <strong>{$Hydrocarbon}</strong>.  Was it cored ? <strong>{$Cored}</strong> </p></article>";
-      }
+           }
     ?>
 
 </main>
