@@ -63,9 +63,9 @@
             while($row = $result->fetch_array())
             {
                 $WellRegtest = $row["WellRegistration"];
-                $idtest = $row["ID"];
-                $wellID = $row ["WellID"];
-                echo "<option value='{$idtest}'>{$WellRegtest}</option>";
+                //$id = $row["WellID"];
+                $WellID = $row ["RowID"];
+                echo "<option value='{$WellRegtest}'>{$WellRegtest}</option>";
             }
             ?>
 
@@ -88,7 +88,7 @@
                     $WellRegtest = $row["WellRegistration"];
                     $idtest = $row["ID"];
                     $wellID = $row ["WellID"];
-                    echo "<option value='{$idtest}'>{$WellRegtest}</option>";
+                    echo "<option value='{$WellRegtest}'>{$WellRegtest}</option>";
                 }
                 ?>
 
