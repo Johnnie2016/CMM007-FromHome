@@ -11,7 +11,7 @@
     <p><a href="home.php">Return to search page...</a></p>
 </header>
 <main>
-    <?
+    <?php
          //include("dbconcomplex.php");
          //if(isset($_POST['wellregistration']))
          // {
