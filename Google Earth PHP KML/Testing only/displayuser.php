@@ -1,3 +1,15 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    //<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+<header>
+    <h2>Hello, now you have logged in, </h2>
+    <h2>how would you like to search ?</h2><p>
+</header>
+
 <main>
 
 <?php
@@ -49,3 +61,8 @@ while($row = $result->fetch_array())
         </select><br>
         <input type="submit" text="Display user details">
     </form>
+
+</main>
+
+</body>
+</html>
