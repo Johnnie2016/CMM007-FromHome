@@ -21,13 +21,15 @@
     <?php
          include("dbconcomplex.php");
 
-         if(isset($_POST['wellregistration'])) {
-         $WellRegistration = $_POST['wellregistration'];
-         $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = 'wellregistration'";
-        }
-        else {
+         //if(isset($_POST['wellregistration'])) {
+         $WellReg = $_POST["wellregistration"];
+         echo $WellReg;
+         $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = ' " . $WellReg . "' ";
+
+        //}
+        //else {
             $sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes";
-        }
+        //}
 
         $result = $db->query($sql_query);
       while($row = $result->fetch_array())
