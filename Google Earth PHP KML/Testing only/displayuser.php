@@ -45,7 +45,7 @@ while($row = $result->fetch_array())
     <!-- Original method -->
     <form action="displayuserTestDB.php" method="post">
         <p>Select the user you are interested in</p>
-        <select name="userselectiontestdb">
+        <select name="userselectionTestDB">
             <?php
             include ("dbconcomplex.php");
             $sql_query = "select distinct userid from wellcoreusers";
