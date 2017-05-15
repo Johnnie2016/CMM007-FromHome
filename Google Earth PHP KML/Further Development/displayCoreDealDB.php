@@ -34,7 +34,7 @@
 
 
              $result = $db->query($sql_query);
-             echo $result;
+             echo $WellReg;
               while($row = $result->fetch_array())
             {
             $ID = $row['RowID'];
