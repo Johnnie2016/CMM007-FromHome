@@ -17,10 +17,10 @@
     //$userselected = $_POST["userselectionTestDB"];
     echo $userselected;
 
-    if(isset($_POST["userselectionTestDB"])) {
+    //if(isset($_POST["userselectionTestDB"])) {
 
         $sql_query = "SELECT userid, username, password FROM wellcoreusers WHERE userid = '$userselected'";
-    }
+    //}
     //else {
         //$sql_query = "SELECT * FROM wellcoreusers";
    // }
