@@ -15,7 +15,7 @@
     include("dbconcomplex.php");
     $userselected = $_POST["userselectionTestDB"];
     //$userselected = $_POST["userselectionTestDB"];
-    echo $userselected;
+    echo $userselected . "testtest";
 
     //if(isset($_POST["userselectionTestDB"])) {
 
