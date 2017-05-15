@@ -22,20 +22,20 @@
     <?
          include("dbconcomplex.php");
             //if(isset($_POST["wellregistration"])) {
-            //$WellRegistration = $_POST["wellregistration"];
-            //echo $WellRegistration;
+            $WellRegistration = $_POST["wellregistration"];
+            echo $WellRegistration;
 
             // I know I am not supposed to use GET on the receiving page but at least I get ALL rows in the Dbase returned
             // as opposed to nothing being returned when I try the POST as greyed out above.
-            if(isset($_GET["wellregistration"])) {
-            $WellRegistration = $_GET["wellregistration"];
-            echo $WellRegistration;
+            //if(isset($_GET["wellregistration"])) {
+            //$WellRegistration = $_GET["wellregistration"];
+            //echo $WellRegistration;
 
-            $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '$WellRegistration'";
-            }
-            else {
+            $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = $WellRegistration";
+            //}
+            else //{
                 $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr";
-            }
+            //}
 
              $result = $db->query($sql_query);
               while($row = $result->fetch_array())
