@@ -28,7 +28,11 @@
            echo $WellReg . testtest;
              //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . '$WellReg' . "'";
              $sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . "'$WellReg'" . "'";
+             //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . ''$WellReg'' . "'";
+
+             //Hard coding in a well registration below does retrieve that well registration but it has single quotes around in the Dbase table.
              //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredukhcornotes where WellRegistration = '''30/14- 3'''";
+             //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . '%'$WellReg'%' . "'";
         //}
         //else {
             //$sql_query = "SELECT WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes";
