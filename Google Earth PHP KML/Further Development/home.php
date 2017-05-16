@@ -62,10 +62,10 @@
             $result = $db->query($sql_query);
             while($row = $result->fetch_array())
             {
-                $WellRegtest = $row["WellRegistration"];
+                $WellReg = $row["WellRegistration"];
                 //$id = $row["WellID"];
                 $id = $row["RowID"];
-                echo "<option value='{$WellRegtest}'>{$WellRegtest}</option>";
+                echo "<option value='{$WellReg}'>{$WellReg}</option>";
             }
             ?>
 
