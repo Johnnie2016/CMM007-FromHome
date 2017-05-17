@@ -8,9 +8,24 @@ $query = "select *
               where (country = 'US')
                 and (state = 'PA')
                 and (population > 25000)";
-$result = mysqli_query($query);
+// $result = mysqli_query($query);
+$result = $db->query($query);
 if (!$result)
     die("Unable to retrieve data");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Prepare the KML header
 $header = '<?xml version="1.0" encoding="UTF-8"?>
@@ -21,7 +36,7 @@ $header = '<?xml version="1.0" encoding="UTF-8"?>
     <IconStyle>
       <Icon>
         /* <href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href> */
-        <img src="assets/images/gusherderrick.PNG" alt="Struck oil" id="gusherderrick">
+        <img src="assets/images/red.PNG" alt="City" id="citymarker">
       </Icon>
     </IconStyle>
   </Style>';
