@@ -1,6 +1,6 @@
 <?php
   // Connect to the database.
-  include 'database_connect.php';
+  include 'dbconcomplex.php';
   
   // Make sure the URL parameters are numbers in the valid range
 
@@ -21,8 +21,8 @@
                 and (longitude between $west and $east)
               order by population desc
               limit 10";
-// $result = $db->query($query);
-$result = mysqli_query($query);
+   $result = $db->query($query);
+//$result = mysqli_query($query);
   if (!$result)
     die("Unable to retrieve data");
 
