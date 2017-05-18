@@ -34,8 +34,7 @@
   <Style id="city_style">
     <IconStyle>
       <Icon>
-      <img src="assets/images/red.PNG" alt="City" id="citymarker">
-        /* <href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href> */
+        <href>http://007intranetjohn.azurewebsites.net/Google Earth PHP KML/SUdell/assets/images/red.PNG</href>
       </Icon>
     </IconStyle>
   </Style>';

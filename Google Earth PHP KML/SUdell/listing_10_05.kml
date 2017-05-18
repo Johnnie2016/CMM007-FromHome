@@ -11,7 +11,6 @@
       <flyToView>0</flyToView>
       <Link>
         <href>http://007intranetjohn.azurewebsites.net/Google Earth PHP KML/SUdell/listing_10_06.php</href>
-        <!--   <href>http://sterlingudell.com/bgmm/chapter_10/listing_10_06.php</href>  -->
         <viewRefreshMode>onStop</viewRefreshMode>
         <viewRefreshTime>0</viewRefreshTime>
       </Link>
