@@ -34,7 +34,8 @@
   <Style id="city_style">
     <IconStyle>
       <Icon>
-        <href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href>
+      <img src="assets/images/red.PNG" alt="City" id="citymarker">
+        /* <href>http://maps.google.com/mapfiles/kml/pal4/icon56.png</href> */
       </Icon>
     </IconStyle>
   </Style>';
