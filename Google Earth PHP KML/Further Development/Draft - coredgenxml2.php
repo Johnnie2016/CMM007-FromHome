@@ -1,5 +1,7 @@
 <?php
+// Connect to the database.
 require('dbconsimple.php');
+
 error_reporting(0);
 function parseLocation(){
 $radius = $_GET['radius'];
@@ -53,6 +55,8 @@ if (!$result) {
 die("Invalid query: " . mysqli_error());
 }
 
+
+
 //header("Content-type: application/vnd.google-earth.kml+xml");  
 // Iterate through the rows, adding XML nodes for each
 while ($row = @mysqli_fetch_assoc($result)){
@@ -61,7 +65,7 @@ $placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name"
 $placenode->appendChild($namenode);
 
 
-//Where you see what appears in the balloon created for each placemark retrieved.
+//Where you see what appears in the balloon created for each placemark created.
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);
 
