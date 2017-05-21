@@ -39,7 +39,7 @@
       </Point>
     </Placemark>
     <Document>
-      <name>Well Data for UKCS</name>
+      <name>Well Data for UKCS - Testing only folder</name>
       <NetworkLink>
         <name>To view well data, please right click and select "Refresh". Move the mouse to a new location and "Refresh" again for a new set of wells</name>
 		<open>1</open>
