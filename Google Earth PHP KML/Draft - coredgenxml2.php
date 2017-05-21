@@ -55,7 +55,7 @@ die("Invalid query: " . mysql_error());
 
 //header("Content-type: application/vnd.google-earth.kml+xml");  
 // Iterate through the rows, adding XML nodes for each
-while ($row = @mysqli_fetch_assoc($result)){
+while ($row = @mysql_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
 $placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ($row['WellID']));
 $placenode->appendChild($namenode);
