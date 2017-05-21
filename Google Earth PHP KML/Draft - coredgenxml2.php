@@ -33,13 +33,13 @@ $parnode->appendChild($opennode);
 // Opens a connection to a mySQL server
 $connection=mysql_connect($server, $username, $password);
 if (!$connection) {
-die("Not connected : " . mysqli_error());
+die("Not connected : " . mysql_error());
 }
 
 // Set the active mySQL database                            
 $db_selected = mysql_select_db($database, $connection);
 if (!$db_selected) {
-die ("Can\'t use db : " . mysqli_error());
+die ("Can\'t use db : " . mysql_error());
 }
 
 // Search the rows in the coredukwells table
@@ -50,7 +50,7 @@ $query = "SELECT WellID, WellRegistration, LatDD, LonDD, ( 3959 * acos( cos("
 .$radius. " ORDER BY distance LIMIT 0 , 20";
 $result = mysql_query($query);
 if (!$result) {
-die("Invalid query: " . mysqli_error());
+die("Invalid query: " . mysql_error());
 }
 
 //header("Content-type: application/vnd.google-earth.kml+xml");  
