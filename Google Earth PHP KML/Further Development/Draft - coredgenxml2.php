@@ -59,8 +59,12 @@ while ($row = @mysqli_fetch_assoc($result)){
 $node = $dom->createElement("Placemark");
 $placenode = $parnode->appendChild($node);$namenode = $dom->createElement("name",htmlentities ($row['WellID']));
 $placenode->appendChild($namenode);
+
+
+//Where you see what appears in the balloon created for each placemark retrieved.
 $descriptioncdata = $dom->createCDATASection("<b>Well Registration:</b> " .
 $row['WellRegistration'] ."<br/><b>Distance:</b> " . $row['distance']);
+
 $descriptionnode=$dom->createElement("description");
 $descriptionnode->appendChild($descriptioncdata);
 $placenode->appendChild($descriptionnode);

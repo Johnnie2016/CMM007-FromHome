@@ -3,9 +3,11 @@
  <Folder>
   <name>Starting point</name>
       <open>1</open>
-    <Placemark id="home">
+
+   <Placemark id="home">
       <name>Starting point</name>	  
       <description>From here, you can move the mouse and right click, refresh to see a new set of data</description>
+
       <LookAt>
         <longitude>1.75683333</longitude>
         <latitude>58.06744444</latitude>
@@ -14,14 +16,16 @@
         <tilt>52.843216</tilt>
         <range>13962.113122</range>
       </LookAt>
+
       <Style>
         <IconStyle>
           <Icon>
-            <href>SearchGlobe.jpg</href>
-          </Icon>
-        </IconStyle>
-		<BalloonStyle>
-          <bgColor>ff669999</bgColor>      <!-- default=ffffffff -->
+           <href>http://007intranetjohn.azurewebsites.net/Google Earth PHP KML/Further Development/oilrig.PNG</href>
+            <!--  <href>SearchGlobe.jpg</href>   -->
+         </Icon>
+       </IconStyle>
+       <BalloonStyle>
+         <bgColor>#f8f400</bgColor>      <!-- default=ffffffff WAS ff669999-->
           <textColor>ff660000</textColor>  <!-- default=ff000000 -->
           <text>                   <!-- eliminates the driving directions -->
             <![CDATA[
@@ -32,14 +36,16 @@
           </text>
         </BalloonStyle>
       </Style>
+
       <Point>
         <coordinates>
           1.7800,58.1000,0
         </coordinates>
       </Point>
     </Placemark>
+
     <Document>
-      <name>Fly to test</name>
+      <name>Fly to Well Data for UKCS test</name>
       <NetworkLink>
         <name>Original Name on Client Side - Google Earth side</name>
 		<open>1</open>
