@@ -25,7 +25,7 @@
          </Icon>
        </IconStyle>
        <BalloonStyle>
-         <bgColor>#f8f400</bgColor>      <!-- default=ffffffff WAS ff669999-->
+         <bgColor>ff87d1ec</bgColor>      <!-- default=ffffffff WAS ff669999 TRY ff87d1ec-->
           <textColor>ff660000</textColor>  <!-- default=ff000000 -->
           <text>                   <!-- eliminates the driving directions -->
             <![CDATA[
