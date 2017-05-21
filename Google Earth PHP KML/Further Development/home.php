@@ -106,7 +106,7 @@
 
     <h3>To go to the starting point in the UK North Sea, click below. All wells within a 200 mile radius of the starting point will be displayed.
     If you move the mouse, to a new position and click refresh, all wells within 200 miles of the new position will be displayed.</h3>
-    <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/BasicNetworkLinkPointsatwebserver.kml">Fly to Google Earth...</a></p>
+    <p><a href="http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/Further%20Development/BasicNetworkLinkPointsatwebserver.kml">Fly to Google Earth...</a></p>
 
 </main>
 
