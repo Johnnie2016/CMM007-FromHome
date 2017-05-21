@@ -1,6 +1,6 @@
 <?php
 // Connect to the database.
-require('dbconsimple.php');
+require('dbconcomplex.php');
 
 error_reporting(0);
 function parseLocation(){
