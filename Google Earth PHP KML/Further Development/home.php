@@ -114,7 +114,7 @@
 
 
 <footer class="grid-100">
-    <img src="assets/images/Sunset rig.PNG" alt="Sunset at sea" id="footerlogo">
+    <!--   <img src="assets/images/Sunset rig.PNG" alt="Sunset at sea" id="footerlogo">  -->
     <p>(c)John Morrison 2017</p>
 </footer>
 
