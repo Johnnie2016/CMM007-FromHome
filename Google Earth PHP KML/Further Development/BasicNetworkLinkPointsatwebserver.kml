@@ -47,7 +47,7 @@
     <Document>
       <name>Fly to Well Data for UKCS test</name>
       <NetworkLink>
-        <name>Original Name on Client Side - Google Earth side</name>
+        <name>Google Earth view</name>
 		<open>1</open>
         <description>
           To view data for the nearest 20 wells, right click and select "Refresh".
