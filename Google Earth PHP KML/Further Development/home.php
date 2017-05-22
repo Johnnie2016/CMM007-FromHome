@@ -12,7 +12,7 @@
 
 <header>
     <img src="assets/images/gusherderrick.PNG" alt="Struck oil" id="gusherderrick">
-    <img src="assets/images/Header%20logo%20Orange.PNG" alt="header" id="headerlogo">
+    <img src="assets/images/Header%20logo%20Orange.PNG" alt="header image" id="headerlogo">
     <br>
     <h2>Hello, now you have logged in, you have a choice of search methods</h2>
 
@@ -112,6 +112,7 @@
 
 <br><br>
 <footer class="grid-100">
+    <img src="assets/images/Sunset rig.PNG" alt="Sunset at sea" id="footerlogo">
     <p>(c)John Morrison 2017</p>
 </footer>
 
