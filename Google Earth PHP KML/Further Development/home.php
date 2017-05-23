@@ -114,13 +114,15 @@
 
 
 <footer >
-    <img src="assets/images/Sunsetrigsmaller.PNG" alt="Sunset at sea" id="footerlogo">
+    <!--  <img src="assets/images/Sunsetrigsmaller.PNG" alt="Sunset at sea" id="footerlogo"> -->
     <p>(c)John Morrison 2017</p>
 </footer>
 
 
 </body>
 </html>
+
+
 
 
 
