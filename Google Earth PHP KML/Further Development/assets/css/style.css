@@ -2,7 +2,7 @@
 
  
  body{
-     background-image: url(Seaunderneathsmaller.PNG);
+     background-image: url(Seaunderneath.PNG);
      max-width:960px;
      margin-left: auto;
      margin-right: auto;
@@ -32,7 +32,7 @@
  {
      max-width: 300px;
      height: 40px;
-     background-image: url(images/Sunsetrigsmaller.PNG);
+     background-image: url(assets/images/Sunsetrigsmaller.PNG);
  }
 
 
