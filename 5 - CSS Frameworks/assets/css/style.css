@@ -118,7 +118,7 @@
  /* MARGIN FIXES */
  aside p,h3,h4{
      margin: 0;
-     color: white; /*should go somehwhere else but this is quicker just now */
+     color: white; /*should go somewhere else but this is quicker just now */
  }
  aside h3{
      padding-top: 10px;
