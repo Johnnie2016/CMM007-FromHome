@@ -3,6 +3,7 @@
  
  body{
      background-image: url(Seaunderneathlarge.PNG);
+     background-position: center;
      max-width:960px;
      margin-left: auto;
      margin-right: auto;
