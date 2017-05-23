@@ -4,7 +4,7 @@
     <title>Welcome to Data4wellcore</title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/css/unsemantic-grid-responsive-tablet.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700" type="text/css">
 </head>
 
 
