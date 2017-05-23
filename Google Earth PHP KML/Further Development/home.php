@@ -113,8 +113,8 @@
 <br><br>
 
 
-<footer class="grid-100">
-    <!--   <img src="assets/images/Sunset rig.PNG" alt="Sunset at sea" id="footerlogo">  -->
+<footer >
+    <!--   <img src="assets/images/Sunsetrigsmaller.PNG" alt="Sunset at sea" id="footerlogo">  -->
     <p>(c)John Morrison 2017</p>
 </footer>
 
@@ -122,7 +122,6 @@
 </body>
 </html>
 
-<!-- $result = array_unique($row);
-                    foreach($result as $row['WellRegistration'] => $WellRegtest) {echo $WellRegtest}; -->
+
 
 
