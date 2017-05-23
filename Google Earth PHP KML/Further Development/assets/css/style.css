@@ -2,6 +2,8 @@
 
  
  body{
+     /* background-color: */
+     background-image: url(http://007intranetjohn.azurewebsites.net/Google%20Earth%20PHP%20KML/Further%20Development/assets/images/Seaunderneathsmaller.PNG);
      max-width:960px;
      margin-left: auto;
      margin-right: auto;
