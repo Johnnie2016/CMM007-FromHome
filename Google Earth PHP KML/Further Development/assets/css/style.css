@@ -4,9 +4,9 @@
  body{
      background-image: url(Seaunderneathlarge.PNG);
      background-position: center;
-     height: 997px;
-     width: 1903px;
-     background-size: 960px;
+     /* height: 997px;
+     width: 1903px;  */
+     background-size: 100%;
      background-repeat: repeat-y;
 
      max-width:960px;
