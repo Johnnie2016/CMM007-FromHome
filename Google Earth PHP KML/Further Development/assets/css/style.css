@@ -4,10 +4,11 @@
  body{
      background-image: url(Seaunderneathlarge.PNG);
      background-position: center;
-     height: 100%;
+     height: 997px;
+     width: 1903px;
      background-size: 960px;
      background-repeat: no-repeat;
-     
+
      max-width:960px;
      margin-left: auto;
      margin-right: auto;
