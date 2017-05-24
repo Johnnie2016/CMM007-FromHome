@@ -23,7 +23,7 @@
          include("dbconcomplex.php");
           //if(isset($_POST['wellregistrationtestdb'])) {
           $WellRegtest = $_POST['wellregistrationtestdb'];
-          echo $WellRegtest;
+          echo $WellRegtest .  Contains_the_following_details;;
           $sql_query = "SELECT WellRegistration, ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '" . $WellRegtest ."'";
           //$sql_query = "SELECT WellRegistration, ID, WellID, PercSand, Hydrocarbon, Cored FROM coredukwells where WellRegistration = '22/14b- 5'";
           //}
