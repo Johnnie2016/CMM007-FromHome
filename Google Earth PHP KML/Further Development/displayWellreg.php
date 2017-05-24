@@ -25,7 +25,7 @@
 
              //if(isset($_POST['wellregistration'])) {
              $WellReg = $_POST["wellregistration"];
-           echo $WellReg . testtest;
+           echo $WellReg . Contains_the_following_details;
                 $sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . $WellReg ."'";
               //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . $WellReg . "'";
               //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . '$WellReg' . "'";
