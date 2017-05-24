@@ -23,7 +23,7 @@
          include("dbconcomplex.php");
 
             $WellReg = $_POST["wellregistration"];
-            echo $WellReg;
+            echo $WellReg .  Contains_the_following_details;
 
             $sql_query = "SELECT RowID, Well_Reg_No, Sample_Type_Deal, Ft, Top_Depth, Bottom_Depth, Preservation, Core_No FROM dealexportapr where Well_Reg_No = '" . $WellReg ."'";
 
