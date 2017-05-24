@@ -55,12 +55,3 @@
 
 </body>
 </html>
-
-
-
-<!-- if(isset($_GET['wellregistrationtestdb'])) {
-          $WellRegtest = $_GET['wellregistrationtestdb'];
-          $sql_query = "SELECT * FROM coredukwells where WellRegistration = '$WellRegtest'";}  -->
-
-
-<!-- $WellRegtest = $_POST["wellregistrationtestdb"]; -->
