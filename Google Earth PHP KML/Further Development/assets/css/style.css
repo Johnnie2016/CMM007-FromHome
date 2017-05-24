@@ -113,10 +113,11 @@
       }
 */
 footer{
-    background-color: #92007B; /* Was 363636*/
+    background-color: #92007B;
+    position: absolute;/* Was 363636*/
 }
  footer>p{
-     width: 250px;
+     width: 200px;
      margin-left: auto;
      margin-right: auto;
      color: white;
