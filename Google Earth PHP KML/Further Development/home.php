@@ -7,23 +7,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700" type="text/css">
 </head>
 
-
+<!--  START OF BODY  -->
 <body>
+  <!--  START OF HEADER  -->
+  <header>
+      <img src="assets/images/gusherderrick.PNG" alt="Struck oil" id="gusherderrick">
+      <img src="assets/images/Header%20logo%20Orange.PNG" alt="header image" id="headerlogo">
+      <br>
+      <h2>Hello, now you have logged in, you have a choice of search methods</h2>
 
-<header>
-    <img src="assets/images/gusherderrick.PNG" alt="Struck oil" id="gusherderrick">
-    <img src="assets/images/Header%20logo%20Orange.PNG" alt="header image" id="headerlogo">
-    <br>
-    <h2>Hello, now you have logged in, you have a choice of search methods</h2>
+      <h3>To carry out a manual search and view a listed version of the data,<br>
+      use the drop down selector for either the core data or below it, well data.<br>
+      a list of the relavant data will be retrieved and displayed.</h3><p>
+  </header>
 
-    <h3>To carry out a manual search and view a listed version of the data,<br>
-    use the drop down selector for either the core data or below it, well data.<br>
-    a list of the relavant data will be retrieved and displayed.</h3><p>
-</header>
-
-
+<!--  START OF MAIN  -->
 <main>
-
+    
     <form action="displayCoreDealDB.php" method="post">
         <h3>Select the Well registration of the core data you are interested in</h3>
         <select name="wellregistration">
