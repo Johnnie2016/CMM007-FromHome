@@ -25,7 +25,7 @@
 
              //if(isset($_POST['wellregistration'])) {
              $WellReg = $_POST["wellregistration"];
-           echo $WellReg . Contains_the_following_details;
+           echo $WellReg .  Contains_the_following_details;
                 $sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . $WellReg ."'";
               //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . $WellReg . "'";
               //$sql_query = "SELECT RowID, WellRegistration, WellID, PercSand, Hydrocarbon, Cored, OrigID FROM coredUKHCorNotes where WellRegistration = '" . '$WellReg' . "'";
@@ -41,7 +41,7 @@
         //}
 
              $result = $db->query($sql_query);
-           echo $WellReg;
+          // echo $WellReg;
            while($row = $result->fetch_array())
            {
                $WellID = $row['RowID'];
